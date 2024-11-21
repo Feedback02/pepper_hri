@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include face-api.js and dependencies -->
+    <script defer src="face-api.min.js"></script>
+    <script defer src="qaws.js"></script>
+</head>
+<body>
+
+    <!-- Text Wrapper Container -->
+    <div id="text_wrapper">
+        <div class="text_default" id="text_default"></div>
+        <div class="text_story" id="text_story"></div>
+    </div>
+
+    <div class="timer" id="timer">Time Left: 30s</div>
+    <div class="status-bar">  
+        <div class="status" id="status"><span style="color: red;">NOT CONNECTED</span></div>
+    </div>
+
+    <div class="image-container">
+        <img id="image_default" src="" alt="Quiz Image">
+    </div>
+
+    <div class="quiz-container">
+        <div class="answers-container" id="buttons">
+            <!-- Example Buttons -->
+        </div>
+    </div>
+
+    <!-- Mascot Container -->
+    <div class="mascot-container">
+        <img id="image_mascot" src="" class="mascot-image" alt="No image">
+    </div>
+
+    <!-- Video Element to Display Webcam Feed -->
+    <video id="video" autoplay muted></video>
+
+    <!-- Emotion Display Element -->
+    <div id="emotion">Detected Emotion: None</div>
+    
+    <!-- Include your scripts -->
+    <script src="script.js"></script> 
+    <script src="detect_emotion.js"></script> 
+</body>
+</html>
