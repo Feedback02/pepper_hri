@@ -1,0 +1,13 @@
+TEXT_default
+<*,*,*,*>: Correct! This sign represent the letter A.
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_esulta.jpeg
+----
+TTS
+<*,*,*,*>: Correct! This sign represent the letter A.
+----
+GESTURE
+<*,*,*,*>: animations/Stand/Gestures/Hey_1
+----
+

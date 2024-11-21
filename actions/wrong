@@ -1,0 +1,9 @@
+TEXT_default
+<*,*,*,*>: Sorry, that is not correct. Try again.
+----
+TTS
+<*,*,*,*>: Sorry, that is not correct. Try again.
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_dubbioso2.jpeg
+----

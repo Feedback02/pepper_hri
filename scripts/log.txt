@@ -1,0 +1,1 @@
+[W] 1731538133.203381 3530 qi.path.sdklayout: No Application was created, trying to deduce paths
