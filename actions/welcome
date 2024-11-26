@@ -11,7 +11,6 @@ GESTURE
 <*,*,*,*>: animations/Stand/Gestures/Hey_1
 ----
 TTS
-<*,*,it,*>: Ciao! Benvenuto!
 <*,*,*,*>:  Hello! Welcome! This is my friend, Marco. Marco is not able to hear sounds. At school, he often felt sad because he couldn’t talk easily with his classmates. One day, Marco got brave and asked me, a robot, for help! He wanted the other children to learn sign language so he wouldn’t feel so alone. So, I started teaching the whole class how to make signs for words like “hello,” “play,” and “friend.” The kids were learning and having fun, and soon Marco had lots of friends to talk to! Now everyone understands each other with signs, and Marco is happy. You can learn too—just one sign can make a friend smile!
 ----
 BUTTONS

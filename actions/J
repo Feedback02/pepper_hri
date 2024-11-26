@@ -1,0 +1,26 @@
+TEXT_title
+<*,*,*,*>: Quiz Time!
+----
+TEXT_story
+<*,*,*,*>: Che lettera e' questa?
+----
+IMAGE_default
+<*,*,*,*>: img/asl_alphabet/J.png
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_dubbioso.jpeg
+----
+BUTTONS
+J
+<*,*,*,*>: J
+R
+<*,*,*,*>: R
+V
+<*,*,*,*>: V
+----
+ASR
+<*,*,*,*>: { 'J': ['J'], 'R': ['R'], 'V': ['V'] }
+----
+TTS
+<*,*,*,*>: Please select an answer.
+----

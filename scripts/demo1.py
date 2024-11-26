@@ -20,45 +20,70 @@ def get_latest_emotion():
             data = response.json()
             return data.get('emotion')
     except Exception as e:
-        print(f"Error fetching emotion data: {e}")
+        pass #print(f"Error fetching emotion data: {e}")
     return None
 
 
 def interaction():
+    import random 
     im.init()
     #im.robot.dance()
-    im.execute('song1')
-    user_answer = im.ask('welcome', timeout=800)  # wait for button
+    #im.execute('song1')
+    # user_answer = im.ask('welcome', timeout=200)  # wait for butto
+    bool_old_user = True
+    bool_play_tutorial = True
+
+
+    if bool_old_user:
+        user_answer = im.ask('tutorial_remember',timeout=800)  # wait for buttonuser_answer = im.ask('welcome', timeout=800)  # wait for button
+        if user_answer == 'Yes':
+            bool_play_tutorial = False
+
+    if bool_play_tutorial:
+        user_answer = im.ask('tutorial_intro') 
+
+    while(bool_play_tutorial):
+         
+        user_answer = im.ask('tutorial_show_1')
+        user_answer = im.ask('tutorial_show_2')  
+        user_answer = im.ask('tutorial_select')  
+        user_answer = im.ask('tutorial_time')
+        user_answer = im.ask('tutoria_points')  # wait for button
+        user_answer = im.ask('tutorial_is_clear',timeout=800)  # wait for buttonuser_answer = im.ask('welcome', timeout=800)  # wait for button
+        if user_answer == 'Yes':
+            bool_play_tutorial = False
+    
+    points = 0
+    alphabet = [l for l in 'ABCDEFGJKLMNOPQRSTUVWXYZ']
 
     
-    #im.ask('tutorial')
-    
+    letter = random.choice(alphabet)
+
     # Display the quiz and wait for the user's answer
-    #im.ask('quiz')  # Displays the quiz action and waits for user input
-
     correct_answer = False
-    user_answer = im.ask('quiz') # Wait for up to 20 seconds
-    print("User answered:", user_answer)
+    user_answer = im.ask(letter)  # Displays the quiz action and waits for user input
     
     
-    while(correct_answer == False):
-        if user_answer == 'A':
+    while(True):
+        if user_answer == letter:
             # Correct answer
             im.execute('correct')
             correct_answer = True
-        elif user_answer in ['B', 'D']:
+            letter = random.choice(alphabet)
+            user_answer = im.ask(letter)  # Displays the quiz action and waits for user input
+        elif user_answer in alphabet:
             # Wrong answer
             im.execute('wrong')
             # Re-display the quiz question
-            user_answer = im.ask('quiz')
+            user_answer = im.ask(letter)
         else:
             # No valid input received
             im.executeModality('TEXT_default', 'I did not understand. Please try again.')
             im.executeModality('TTS', 'I did not understand. Please try again.')
-    
+        
     # After correct answer, execute goodbye action
-    if (a!='timeout'):
-    	im.execute('goodbye')
+        if (user_answer=='timeout'):
+            im.execute('goodbye')    
     	
     im.init()  # Reset the interface
 

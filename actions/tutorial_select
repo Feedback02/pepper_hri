@@ -1,0 +1,31 @@
+IMAGE_default
+<*,*,*,*>: img/asl_alphabet/A.png
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_dubbioso.jpeg
+----
+TEXT
+<*,*,*,*>:  Tutorial
+----
+TEXT_story
+<*,*,*,*>:  Then, I will show you the sign Marco is making, and you need to help me by selecting the correct letter from the ones you see below! 
+----
+GESTURE
+<*,*,*,*>: animations/Stand/Gestures/Hey_1
+----
+TTS
+<*,*,*,*>: Then, I will show you the sign Marco is making, and you need to help me by selecting the correct letter from the ones you see below!
+----
+BUTTONS
+start
+<*,*,*,*>:  A
+start
+<*,*,*,*>:  B
+start
+<*,*,*,*>:  C
+----
+ASR
+<*,*,*,*>: { 'A': ['A'], 'B': ['B'], 'D': ['D'] }
+----
+
+

@@ -1,0 +1,21 @@
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_esulta.jpeg
+----
+TEXT
+<*,*,*,*>:  Tutorial
+----
+TEXT_story
+<*,*,*,*>:  Each time you select the correct letter on the first try, you will earn a point! Let's see how many points you can get! 
+----
+GESTURE
+<*,*,*,*>: animations/Stand/Gestures/Hey_1
+----
+TTS
+<*,*,*,*>: Each time you select the correct letter on the first try, you will earn a point! Let's see how many points you can get!
+----
+BUTTONS
+start
+<*,*,*,*>:  Next
+----
+
+

@@ -1,0 +1,21 @@
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_saluta.jpeg
+----
+TEXT
+<*,*,*,*>:  Tutorial
+----
+TEXT_story
+<*,*,*,*>: Let's see together how to play!
+----
+GESTURE
+<*,*,*,*>: animations/Stand/Gestures/Hey_1
+----
+TTS
+<*,*,*,*>:  Let's see together how to play!
+----
+BUTTONS
+start
+<*,*,*,*>:  Next
+----
+
+

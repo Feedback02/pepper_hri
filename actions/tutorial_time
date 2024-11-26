@@ -1,0 +1,21 @@
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_contento.jpeg
+----
+TEXT
+<*,*,*,*>:  Tutorial
+----
+TEXT_story
+<*,*,*,*>: But be careful! You have a limited time to answer, and the remaining time is shown here in the corner on the right.
+----
+GESTURE
+<*,*,*,*>: animations/Stand/Gestures/Hey_1
+----
+TTS
+<*,*,*,*>: But be careful! You have a limited time to answer, and the remaining time is shown here in the corner on the right.
+----
+BUTTONS
+start
+<*,*,*,*>:  Next
+----
+
+

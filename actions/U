@@ -1,0 +1,26 @@
+TEXT_title
+<*,*,*,*>: Quiz Time!
+----
+TEXT_story
+<*,*,*,*>: Che lettera e' questa?
+----
+IMAGE_default
+<*,*,*,*>: img/asl_alphabet/U.png
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_dubbioso.jpeg
+----
+BUTTONS
+I
+<*,*,*,*>: I
+U
+<*,*,*,*>: U
+D
+<*,*,*,*>: D
+----
+ASR
+<*,*,*,*>: { 'I': ['I'], 'U': ['U'], 'D': ['D'] }
+----
+TTS
+<*,*,*,*>: Please select an answer.
+----

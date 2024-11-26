@@ -1,0 +1,23 @@
+IMAGE_default
+<*,*,*,*>: img/asl_alphabet/A.png
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_contento.jpeg
+----
+TEXT
+<*,*,*,*>:  Tutorial
+----
+TEXT_story
+<*,*,*,*>: First, I will show you which letter corresponds to the sign made by Marco. For example, this is the letter A
+----
+GESTURE
+<*,*,*,*>: animations/Stand/Gestures/Hey_1
+----
+TTS
+<*,*,*,*>: First, I will show you which letter corresponds to the sign made by Marco. For example, this is the letter A
+----
+BUTTONS
+start
+<*,*,*,*>:  Next
+----
+

@@ -1,0 +1,29 @@
+IMAGE_default
+<*,*,*,*>: 
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_dubbioso2.jpeg
+----
+TEXT
+<*,*,*,*>:  Tutorial
+----
+TEXT_story
+<*,*,*,*>: Is everything clear?
+----
+GESTURE
+<*,*,*,*>: animations/Stand/Gestures/Hey_1
+----
+TTS
+<*,*,*,*>: Is everything clear?
+----
+BUTTONS
+Yes
+<*,*,*,*>: Yes
+No
+<*,*,*,*>: No
+----
+ASR
+<*,*,*,*>: { 'Yes': ['Yes'], 'No': ['No'] }
+
+
+

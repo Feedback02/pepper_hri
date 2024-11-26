@@ -1,0 +1,26 @@
+TEXT_title
+<*,*,*,*>: Quiz Time!
+----
+TEXT_story
+<*,*,*,*>: Che lettera e' questa?
+----
+IMAGE_default
+<*,*,*,*>: img/asl_alphabet/P.png
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_dubbioso.jpeg
+----
+BUTTONS
+F
+<*,*,*,*>: F
+N
+<*,*,*,*>: N
+P
+<*,*,*,*>: P
+----
+ASR
+<*,*,*,*>: { 'F': ['F'], 'N': ['N'], 'P': ['P'] }
+----
+TTS
+<*,*,*,*>: Please select an answer.
+----

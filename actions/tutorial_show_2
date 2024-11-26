@@ -1,0 +1,23 @@
+IMAGE_default
+<*,*,*,*>: img/asl_alphabet/E.png
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_contento.jpeg
+----
+TEXT
+<*,*,*,*>:  Tutorial
+----
+TEXT_story
+<*,*,*,*>:  and this one is the letter E. 
+----
+GESTURE
+<*,*,*,*>: animations/Stand/Gestures/Hey_1
+----
+TTS
+<*,*,*,*>: and this one is the letter E. 
+----
+BUTTONS
+start
+<*,*,*,*>:  Next
+----
+

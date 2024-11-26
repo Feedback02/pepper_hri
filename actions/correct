@@ -1,11 +1,11 @@
-TEXT_default
-<*,*,*,*>: Correct! This sign represent the letter A.
+TEXT_story
+<*,*,*,*>: Correct! You've chosen the right letter!
 ----
 IMAGE_mascot
 <*,*,*,*>: img/Bambino_sordomuto/Bambino_esulta.jpeg
 ----
 TTS
-<*,*,*,*>: Correct! This sign represent the letter A.
+<*,*,*,*>: Correct! You've chosen the right letter!
 ----
 GESTURE
 <*,*,*,*>: animations/Stand/Gestures/Hey_1
