@@ -1081,81 +1081,81 @@ class PepperRobot:
 
     def think(self):
     
-	names = list()
-	times = list()
-	keys = list()
+        names = list()
+        times = list()
+        keys = list()
 
-	names.append("HeadPitch")
-	times.append([0.3, 1.2, 2.48])
-	keys.append([-0.377539, -0.377539, 0.211185])
+        names.append("HeadPitch")
+        times.append([0.3, 1.2, 2.48])
+        keys.append([-0.377539, -0.377539, 0.211185])
 
-	names.append("HeadYaw")
-	times.append([0.3, 1.2, 2.48])
-	keys.append([0.00912633, 0.00912633, -0.221657])
+        names.append("HeadYaw")
+        times.append([0.3, 1.2, 2.48])
+        keys.append([0.00912633, 0.00912633, -0.221657])
 
-	names.append("HipPitch")
-	times.append([0.3, 1.2, 2.48])
-	keys.append([-0.0426928, -0.0426927, -0.118682])
+        names.append("HipPitch")
+        times.append([0.3, 1.2, 2.48])
+        keys.append([-0.0426928, -0.0426927, -0.118682])
 
-	names.append("HipRoll")
-	times.append([0.3, 1.2, 2.48])
-	keys.append([-0.00887858, -0.00887858, 0.0610865])
+        names.append("HipRoll")
+        times.append([0.3, 1.2, 2.48])
+        keys.append([-0.00887858, -0.00887858, 0.0610865])
 
-	names.append("KneePitch")
-	times.append([0.3, 1.2])
-	keys.append([-0.00663467, -0.00663468])
+        names.append("KneePitch")
+        times.append([0.3, 1.2])
+        keys.append([-0.00663467, -0.00663468])
 
-	names.append("LElbowRoll")
-	times.append([0.3, 1.2, 2.48, 3.08])
-	keys.append([-0.108104, -0.764454, -1.56207, -1.46433])
+        names.append("LElbowRoll")
+        times.append([0.3, 1.2, 2.48, 3.08])
+        keys.append([-0.108104, -0.764454, -1.56207, -1.46433])
 
-	names.append("LElbowYaw")
-	times.append([0.3, 1.2, 2.48, 3.08])
-	keys.append([-1.71638, -1.80467, -0.450295, -0.640536])
+        names.append("LElbowYaw")
+        times.append([0.3, 1.2, 2.48, 3.08])
+        keys.append([-1.71638, -1.80467, -0.450295, -0.640536])
 
-	names.append("LHand")
-	times.append([0.3, 1.2, 2.48, 3.08, 3.52, 3.76, 4])
-	keys.append([0.6942, 0.6942, 0.39, 0.82, 0.05, 0.8, 0.05])
+        names.append("LHand")
+        times.append([0.3, 1.2, 2.48, 3.08, 3.52, 3.76, 4])
+        keys.append([0.6942, 0.6942, 0.39, 0.82, 0.05, 0.8, 0.05])
 
-	names.append("LShoulderPitch")
-	times.append([0.4, 1.2, 2.48, 3.08, 3.28])
-	keys.append([1.77271, 1.00706, -1.49051, -1.23569, -1.28631])
+        names.append("LShoulderPitch")
+        times.append([0.4, 1.2, 2.48, 3.08, 3.28])
+        keys.append([1.77271, 1.00706, -1.49051, -1.23569, -1.28631])
 
-	names.append("LShoulderRoll")
-	times.append([0.3, 1.2, 2.48])
-	keys.append([0.103651, 0.103651, 0.407583])
+        names.append("LShoulderRoll")
+        times.append([0.3, 1.2, 2.48])
+        keys.append([0.103651, 0.103651, 0.407583])
 
-	names.append("LWristYaw")
-	times.append([0.3, 1.2, 2.48, 3.08])
-	keys.append([0.0425655, 0.0425654, -0.527089, -1.19206])
+        names.append("LWristYaw")
+        times.append([0.3, 1.2, 2.48, 3.08])
+        keys.append([0.0425655, 0.0425654, -0.527089, -1.19206])
 
-	names.append("RElbowRoll")
-	times.append([0.3, 1.2])
-	keys.append([0.102232, 0.102232])
+        names.append("RElbowRoll")
+        times.append([0.3, 1.2])
+        keys.append([0.102232, 0.102232])
 
-	names.append("RElbowYaw")
-	times.append([0.3, 1.2])
-	keys.append([1.69033, 1.69033])
+        names.append("RElbowYaw")
+        times.append([0.3, 1.2])
+        keys.append([1.69033, 1.69033])
 
-	names.append("RHand")
-	times.append([0.3, 1.2])
-	keys.append([0.688049, 0.688049])
+        names.append("RHand")
+        times.append([0.3, 1.2])
+        keys.append([0.688049, 0.688049])
 
-	names.append("RShoulderPitch")
-	times.append([0.3, 1.2])
-	keys.append([1.75191, 1.75191])
+        names.append("RShoulderPitch")
+        times.append([0.3, 1.2])
+        keys.append([1.75191, 1.75191])
 
-	names.append("RShoulderRoll")
-	times.append([0.3, 1.2])
-	keys.append([-0.102647, -0.102647])
+        names.append("RShoulderRoll")
+        times.append([0.3, 1.2])
+        keys.append([-0.102647, -0.102647])
 
-	names.append("RWristYaw")
-	times.append([0.3, 1.2])
-	keys.append([-0.0258008, -0.0258009])
+        names.append("RWristYaw")
+        times.append([0.3, 1.2])
+        keys.append([-0.0258008, -0.0258009])
 
 
-	self.motion_service.angleInterpolation(names, keys, times, True)
-	self.normalPosture()
+        self.motion_service.angleInterpolation(names, keys, times, True)
+        self.normalPosture()
 
     
     def hello(self):
@@ -1180,73 +1180,73 @@ class PepperRobot:
      
         isAbsolute = True
         
-	names = list()
-	times = list()
-	keys = list()
+        names = list()
+        times = list()
+        keys = list()
 
-	names.append("LElbowRoll")
-	times.append([0.3, 0.7, 1.2])
-	keys.append([-0.325779, -1.24861, -1.52963])
+        names.append("LElbowRoll")
+        times.append([0.3, 0.7, 1.2])
+        keys.append([-0.325779, -1.24861, -1.52963])
 
-	names.append("LElbowYaw")
-	times.append([0.3, 0.7 , 1.2])
-	keys.append([-0.943899, -1.60194, -0.252625])
+        names.append("LElbowYaw")
+        times.append([0.3, 0.7 , 1.2])
+        keys.append([-0.943899, -1.60194, -0.252625])
 
-	names.append("LHand")
-	times.append([0.3, 0.7, 1.2])
-	keys.append([0.353481, 0.519131, 0.836042])
+        names.append("LHand")
+        times.append([0.3, 0.7, 1.2])
+        keys.append([0.353481, 0.519131, 0.836042])
 
-	names.append("LShoulderPitch")
-	times.append([0.3, 0.7,  1.2])
-	keys.append([1.50993, 0.569389, -0.14717])
+        names.append("LShoulderPitch")
+        times.append([0.3, 0.7,  1.2])
+        keys.append([1.50993, 0.569389, -0.14717])
 
-	names.append("LShoulderRoll")
-	times.append([0.3, 0.7, 1.2])
-	keys.append([0.216273, 0.623649, 0.703776])
+        names.append("LShoulderRoll")
+        times.append([0.3, 0.7, 1.2])
+        keys.append([0.216273, 0.623649, 0.703776])
 
-	names.append("LWristYaw")
-	times.append([0.3, 0.7, 1.2])
-	keys.append([-0.4881, -0.478707, -0.603625])
+        names.append("LWristYaw")
+        times.append([0.3, 0.7, 1.2])
+        keys.append([-0.4881, -0.478707, -0.603625])
 
-	names.append("RElbowRoll")
-	times.append([0.3, 0.7, 1.2])
-	keys.append([0.458528, 1.23183, 1.44387])
+        names.append("RElbowRoll")
+        times.append([0.3, 0.7, 1.2])
+        keys.append([0.458528, 1.23183, 1.44387])
 
-	names.append("RElbowYaw")
-	times.append([0.3, 0.7, 1.2])
-	keys.append([0.890075, 1.6116, 0.511499])
+        names.append("RElbowYaw")
+        times.append([0.3, 0.7, 1.2])
+        keys.append([0.890075, 1.6116, 0.511499])
 
-	names.append("RHand")
-	times.append([0.3, 0.7, 1.2])
-	keys.append([0.372075, 0.536579, 0.789008])
+        names.append("RHand")
+        times.append([0.3, 0.7, 1.2])
+        keys.append([0.372075, 0.536579, 0.789008])
 
-	names.append("RShoulderPitch")
-	times.append([0.3, 0.7, 1.2])
-	keys.append([1.2999, 1.49751, 0.960532])
+        names.append("RShoulderPitch")
+        times.append([0.3, 0.7, 1.2])
+        keys.append([1.2999, 1.49751, 0.960532])
 
-	names.append("RShoulderRoll")
-	times.append([0.3, 0.7, 1.2])
-	keys.append([-0.206746, -0.560627, -0.701282])
+        names.append("RShoulderRoll")
+        times.append([0.3, 0.7, 1.2])
+        keys.append([-0.206746, -0.560627, -0.701282])
 
-	names.append("RWristYaw")
-	times.append([0.3, 0.7, 1.2])
-	keys.append([0.565597, 0.556715, 1.66671])
+        names.append("RWristYaw")
+        times.append([0.3, 0.7, 1.2])
+        keys.append([0.565597, 0.556715, 1.66671])
 
 
-	def motion():
-		self.motion_service.angleInterpolation(names, keys, times, True)
-	def speech():
-		self.say('This is the tablet, you have to look here')
-		
-	motion_thread = threading.Thread(target=motion)
-	speech_thread = threading.Thread(target=speech)
-	motion_thread.start()
-	speech_thread.start()
-	motion_thread.join()
-	speech_thread.join()
-	
-	time.sleep(1)
-	self.normalPosture()
+        def motion():
+            self.motion_service.angleInterpolation(names, keys, times, True)
+        def speech():
+            self.say('This is the tablet, you have to look here')
+            
+        motion_thread = threading.Thread(target=motion)
+        speech_thread = threading.Thread(target=speech)
+        motion_thread.start()
+        speech_thread.start()
+        motion_thread.join()
+        speech_thread.join()
+        
+        time.sleep(1)
+        self.normalPosture()
 	
 	
     def intro(self):
@@ -1254,619 +1254,617 @@ class PepperRobot:
     	isAbsolute=True
     	
     	#OpenArmInFront
-	names = list()
-	times = list()
-	keys = list()
-
-	names.append("HeadPitch")
-	times.append([0.48, 0.84])
-	keys.append([-0.192183, -0.368462])
-
-	names.append("HeadYaw")
-	times.append([0.84])
-	keys.append([0])
-
-	names.append("HipPitch")
-	times.append([0.56, 1])
-	keys.append([-0.309665, -0.065382])
-
-	names.append("HipRoll")
-	times.append([0.56, 1])
-	keys.append([-0.0079017, -0.0079017])
-
-	names.append("KneePitch")
-	times.append([0.56, 1])
-	keys.append([0.205769, 0.0608205])
-
-	names.append("LElbowRoll")
-	times.append([0.56, 0.92])
-	keys.append([-1.00013, -0.414292])
-
-	names.append("LElbowYaw")
-	times.append([0.56, 0.92])
-	keys.append([-1.56462, -1.78575])
-
-	names.append("LHand")
-	times.append([0.56, 0.92])
-	keys.append([0.3168, 0.72])
-
-	names.append("LShoulderPitch")
-	times.append([0.56, 0.92])
-	keys.append([0.918823, 0.802022])
-
-	names.append("LShoulderRoll")
-	times.append([0.56, 0.92])
-	keys.append([0.382278, 0.492623])
-
-	names.append("LWristYaw")
-	times.append([0.56, 0.92])
-	keys.append([-0.937315, -1.22341])
-
-	names.append("RElbowRoll")
-	times.append([0.48, 0.84])
-	keys.append([1.08918, 0.415538])
-
-	names.append("RElbowYaw")
-	times.append([0.48, 0.84])
-	keys.append([1.64636, 1.74221])
-
-	names.append("RHand")
-	times.append([0.48, 0.84])
-	keys.append([0.024, 0.72])
-
-	names.append("RShoulderPitch")
-	times.append([0.48, 0.84])
-	keys.append([0.570689, 0.487636])
-
-	names.append("RShoulderRoll")
-	times.append([0.48, 0.84])
-	keys.append([-0.237621, -0.367388])
-
-	names.append("RWristYaw")
-	times.append([0.48, 0.84])
-	keys.append([0.793036, 1.2251])
-	
-	
-	#self.motion_service.moveInit()
-	#self.motion_service.angleInterpolation(names, keys, times, isAbsolute)
-	#self.say('This is my friend, Marco')
-	
-	def motion():
-		self.motion_service.angleInterpolation(names, keys, times, True)
-	def speech():
-		self.say("This is my friend, Marco")
-		
-	motion_thread = threading.Thread(target=motion)
-	speech_thread = threading.Thread(target=speech)
-	motion_thread.start()
-	speech_thread.start()
-	motion_thread.join()
-	speech_thread.join()
-
-	#LittleSpreadRightArms
-	names = list()
-	times = list()
-	keys = list()
-
-	names.append("HeadPitch")
-	times.append([1.12, 1.8, 2.16])
-	keys.append([-0.205769, -0.370226, -0.293631])
-
-	names.append("HeadYaw")
-	times.append([0.2, 0.56, 0.84, 1.12, 1.4, 1.72, 2.16])
-	keys.append([-0.0122965, -0.0102073, -0.0985437, 0.0893026, -0.0985437, 0.0893026, -0.0140261])
-
-	names.append("HipPitch")
-	times.append([0.76, 2.16])
-	keys.append([-0.187014, -0.05314])
-
-	names.append("HipRoll")
-	times.append([0.76, 2.16])
-	keys.append([-0.0456695, -0.0456695])
-
-	names.append("KneePitch")
-	times.append([0.76, 2.16])
-	keys.append([0.0811503, -0.00708406])
-
-	names.append("LElbowRoll")
-	times.append([1.12, 1.8, 2.16])
-	keys.append([-0.425288, -0.418776, -0.416156])
-
-	names.append("LElbowYaw")
-	times.append([1.12, 1.8, 2.16])
-	keys.append([-1.43356, -1.19957, -1.19838])
-
-	names.append("LHand")
-	times.append([1.12, 1.8, 2.16])
-	keys.append([0.84, 0.311072, 0.306419])
-
-	names.append("LShoulderPitch")
-	times.append([1.12, 1.8, 2.16])
-	keys.append([1.40624, 1.45575, 1.46352])
-
-	names.append("LShoulderRoll")
-	times.append([1.12, 1.8, 2.16])
-	keys.append([0.358248, 0.242796, 0.206013])
-
-	names.append("LWristYaw")
-	times.append([1.12, 1.8, 2.16])
-	keys.append([-0.656244, 0.076658, 0.0977037])
-
-	names.append("RElbowRoll")
-	times.append([0.92, 1.6, 2.04])
-	keys.append([0.428422, 0.421844, 0.413016])
-
-	names.append("RElbowYaw")
-	times.append([0.92, 1.6, 2.04])
-	keys.append([2.03783, 1.32996, 1.19382])
-
-	names.append("RHand")
-	times.append([0.92, 1.6, 2.04])
-	keys.append([0.85, 0.351494, 0.3])
-
-	names.append("RShoulderPitch")
-	times.append([0.92, 1.6, 2.04])
-	keys.append([1.4546, 1.45882, 1.46675])
-
-	names.append("RShoulderRoll")
-	times.append([0.92, 1.6, 2.04])
-	keys.append([-0.3529, -0.330302, -0.267505])
-
-	names.append("RWristYaw")
-	times.append([0.92, 1.6, 2.04])
-	keys.append([0.783567, 0.216252, 0.108709])
-	
-	
-	def motion():
-		self.motion_service.angleInterpolation(names, keys, times, True)
-	def speech():
-		self.say("Marco is not able to hear sounds and to speak")
-		
-	motion_thread = threading.Thread(target=motion)
-	speech_thread = threading.Thread(target=speech)
-	motion_thread.start()
-	speech_thread.start()
-	motion_thread.join()
-	speech_thread.join()
-	
-	#RightArmUpAndDown
-	names = list()
-	times = list()
-	keys = list()
-
-	names.append("HeadPitch")
-	times.append([0.44, 0.96, 1.48, 2.32, 2.8])
-	keys.append([-0.515251, -0.34076, -0.0929187, -0.257377, -0.329649])
-
-	names.append("HeadYaw")
-	times.append([0.44, 0.96, 1.24, 1.48, 1.8, 2.12, 2.48, 2.8])
-	keys.append([-0.0156179, -0.0135287, -0.12827, 0.0965434, -0.12827, 0.0965434, -0.0173475, -0.0123995])
-
-	names.append("HipPitch")
-	times.append([0.44, 0.96, 2.32])
-	keys.append([-0.158713, -0.0544052, -0.277851])
-
-	names.append("HipRoll")
-	times.append([0.44, 0.96, 2.32])
-	keys.append([-0.0168668, 0.0440326, 0.00417265])
-
-	names.append("KneePitch")
-	times.append([0.44, 0.96, 2.32])
-	keys.append([0.0375921, -0.0223025, 0.0887257])
-
-	names.append("LElbowRoll")
-	times.append([0.44, 0.96, 1.88, 2.8])
-	keys.append([-0.425005, -0.68766, -0.425288, -0.416156])
-
-	names.append("LElbowYaw")
-	times.append([0.44, 0.96, 1.8, 2.8])
-	keys.append([-1.39032, -1.9088, -1.96299, -1.45377])
-
-	names.append("LHand")
-	times.append([0.44, 0.96, 1.88, 2.8])
-	keys.append([0.305394, 0.62, 0.314203, 0.306419])
-
-	names.append("LShoulderPitch")
-	times.append([0.44, 0.96, 1.88, 2.8])
-	keys.append([1.41011, 1.45418, 1.40624, 1.46352])
-
-	names.append("LShoulderRoll")
-	times.append([0.44, 0.96, 1.88, 2.8])
-	keys.append([0.241407, 0.44927, 0.246933, 0.18874])
-
-	names.append("LWristYaw")
-	times.append([0.44, 0.96, 1.88, 2.8])
-	keys.append([-0.111101, -0.111101, -0.108112, 0.0977037])
-
-	names.append("RElbowRoll")
-	times.append([0.44, 0.72, 1.24, 1.88, 2.8])
-	keys.append([0.431716, 0.429253, 0.998328, 0.428422, 0.413016])
-
-	names.append("RElbowYaw")
-	times.append([0.44, 0.96, 1.48, 1.88, 2.8])
-	keys.append([1.21446, 2.02109, 2.02008, 1.91888, 1.19382])
-
-	names.append("RHand")
-	times.append([0.44, 0.96, 1.24, 1.48, 1.88, 2.8])
-	keys.append([0.315043, 0.98, 0.98, 0.65, 0.53724, 0.3])
-
-	names.append("RShoulderPitch")
-	times.append([0.44, 0.96, 1.48, 1.88, 2.8])
-	keys.append([1.41886, 1.14145, 1.42942, 1.4546, 1.46675])
-
-	names.append("RShoulderRoll")
-	times.append([0.44, 0.96, 1.48, 1.88, 2.8])
-	keys.append([-0.194604, -0.212728, -0.211925, -0.204261, -0.181265])
-
-	names.append("RWristYaw")
-	times.append([0.44, 0.96, 1.48, 1.88, 2.8])
-	keys.append([-0.0875347, 0.912807, 0.90059, 0.783567, 0.108709])
-	
-	def motion():
-		self.motion_service.angleInterpolation(names, keys, times, True)
-	def speech():
-		self.say("He often feels sad because it's very hard for him to make friends")
-		
-	motion_thread = threading.Thread(target=motion)
-	speech_thread = threading.Thread(target=speech)
-	motion_thread.start()
-	speech_thread.start()
-	motion_thread.join()
-	speech_thread.join()
-	
-
-
-	#StrongArmOpen
-	names = list()
-	times = list()
-	keys = list()
-
-	names.append("HeadPitch")
-	times.append([0.52, 1.04, 1.48])
-	keys.append([-0.415657, -0.123426, -0.369636])
-
-	names.append("HeadYaw")
-	times.append([0.52, 1.04, 1.48])
-	keys.append([0.0398422, 0.0398422, 0.0536479])
-
-	names.append("HipPitch")
-	times.append([0.4, 0.72, 0.84, 1.28, 1.48])
-	keys.append([-0.120399, -0.178497, -0.235035, -0.104673, -0.0659148])
-
-	names.append("HipRoll")
-	times.append([0.4, 0.72, 0.84, 1.28, 1.48])
-	keys.append([-0.022229, -0.022229, -0.022229, -0.0122608, -0.0016941])
-
-	names.append("KneePitch")
-	times.append([0.4, 0.72, 0.84, 1.28, 1.48])
-	keys.append([0.0319777, 0.0964101, 0.133068, 0.0460924, 0.0185926])
-
-	names.append("LElbowRoll")
-	times.append([0.36, 0.96, 1.44])
-	keys.append([-1.01055, -1.15715, -1.30027])
-
-	names.append("LElbowYaw")
-	times.append([0.36, 0.96, 1.44])
-	keys.append([-1.15054, -1.71812, -1.77181])
-
-	names.append("LHand")
-	times.append([0.36, 0.96, 1.44])
-	keys.append([0.2132, 0.68, 0.7728])
-
-	names.append("LShoulderPitch")
-	times.append([0.36, 0.96, 1.44])
-	keys.append([1.333, 1.32687, 1.2706])
-
-	names.append("LShoulderRoll")
-	times.append([0.36, 0.96, 1.44])
-	keys.append([0.132418, 0.164632, 0.143156])
-
-	names.append("LWristYaw")
-	times.append([0.36, 0.96, 1.44])
-	keys.append([0.21932, -0.70875, -0.808459])
-
-	names.append("RElbowRoll")
-	times.append([0.44, 1.04, 1.52])
-	keys.append([1.01055, 1.08909, 1.30027])
-
-	names.append("RElbowYaw")
-	times.append([0.44, 1.04, 1.52])
-	keys.append([1.17807, 1.87297, 1.94201])
-
-	names.append("RHand")
-	times.append([0.44, 1.04, 1.52])
-	keys.append([0.0456001, 0.68, 0.7692])
-
-	names.append("RShoulderPitch")
-	times.append([0.44, 1.04, 1.52])
-	keys.append([1.29934, 1.5141, 1.2706])
-
-	names.append("RShoulderRoll")
-	times.append([0.44, 1.04, 1.52])
-	keys.append([-0.176474, -0.115114, -0.116648])
-
-	names.append("RWristYaw")
-	times.append([0.44, 1.04, 1.52])
-	keys.append([0.0889301, 0.935697, 1.1029])
-	
-	def motion():
-		self.motion_service.angleInterpolation(names, keys, times, True)
-	def speech():
-		self.say('I want to help him')
-		
-	motion_thread = threading.Thread(target=motion)
-	speech_thread = threading.Thread(target=speech)
-	motion_thread.start()
-	speech_thread.start()
-	motion_thread.join()
-	speech_thread.join()
-	
-	
-	
-	#FastPointAtUserLeft
-	names = list()
-	times = list()
-	keys = list()
-
-	names.append("HeadPitch")
-	times.append([0.36, 0.56, 0.72, 1, 1.44, 1.84])
-	keys.append([-0.378473, -0.248071, -0.382718, -0.234108, -0.36625, -0.386192])
-
-	names.append("HeadYaw")
-	times.append([0.36, 0.72, 1, 1.44, 1.84])
-	keys.append([-0.0245859, -0.10282, -0.144238, -0.0951499, -0.0951499])
-
-	names.append("HipPitch")
-	times.append([0.48, 1.12, 1.56])
-	keys.append([-0.144636, -0.254162, -0.243543])
-
-	names.append("HipRoll")
-	times.append([0.48, 1.12, 1.56])
-	keys.append([0.00716199, 0.022228, -0.00310838])
-
-	names.append("KneePitch")
-	times.append([0.48, 1.12, 1.56])
-	keys.append([0.0283312, 0.0946297, 0.0803466])
-
-	names.append("LElbowRoll")
-	times.append([0.4, 0.76, 1.04, 1.48, 1.88])
-	keys.append([-1.42811, -0.623083, -0.737812, -1.04154, -1.11211])
-
-	names.append("LElbowYaw")
-	times.append([0.4, 0.76, 1.04, 1.48, 1.88])
-	keys.append([-1.18429, -1.19503, -1.25025, -0.971065, -0.929646])
-
-	names.append("LHand")
-	times.append([0.4, 0.76, 1.04, 1.48, 1.88])
-	keys.append([0.0984, 0.94, 0.39, 0.09, 0.02])
-
-	names.append("LShoulderPitch")
-	times.append([0.4, 0.76, 1.04, 1.48, 1.88])
-	keys.append([1.07222, 0.855211, 0.89428, 1.20261, 1.18881])
-
-	names.append("LShoulderRoll")
-	times.append([0.4, 0.76, 1.04, 1.48, 1.88])
-	keys.append([0.486161, 0.460083, 0.461617, 0.45088, 0.429403])
-
-	names.append("LWristYaw")
-	times.append([0.4, 0.76, 1.04, 1.48, 1.88])
-	keys.append([-0.918909, -0.90817, -0.918909, -0.101286, 0.145688])
-
-	names.append("RElbowRoll")
-	times.append([0.4, 0.76, 1.04, 1.48, 1.88])
-	keys.append([0.874422, 0.898967, 0.926578, 0.733295, 0.70875])
-
-	names.append("RElbowYaw")
-	times.append([0.4, 0.76, 1.04, 1.48, 1.88])
-	keys.append([1.38363, 1.27615, 1.5054, 1.59884, 1.53549])
-
-	names.append("RHand")
-	times.append([0.4, 0.76, 1.04, 1.48, 1.88])
-	keys.append([0.5008, 0.28, 0.14, 0.1532, 0.1532])
-
-	names.append("RShoulderPitch")
-	times.append([0.4, 0.76, 1.04, 1.48, 1.88])
-	keys.append([1.80863, 1.81783, 1.84237, 1.8071, 1.81783])
-
-	names.append("RShoulderRoll")
-	times.append([0.4, 0.76, 1.04, 1.48, 1.88])
-	keys.append([-0.119694, -0.275542, -0.295549, -0.176517, -0.16085])
-
-	names.append("RWristYaw")
-	times.append([0.4, 0.76, 1.04, 1.48, 1.88])
-	keys.append([-0.0767419, -0.0767419, -0.0767419, -0.0767419, -0.0767419])
-	
-	def motion():
-		self.motion_service.angleInterpolation(names, keys, times, True)
-	def speech():
-		self.say('And I bet you do too!')
-		
-	motion_thread = threading.Thread(target=motion)
-	speech_thread = threading.Thread(target=speech)
-	motion_thread.start()
-	speech_thread.start()
-	motion_thread.join()
-	speech_thread.join()
-	
-	
-	
-	#LeftArmOnChest
-	names = list()
-	times = list()
-	keys = list()
-
-	names.append("HeadPitch")
-	times.append([0.3, 1.68])
-	keys.append([-0.299375, -0.307887])
-
-	names.append("HeadYaw")
-	times.append([0.3, 1.68])
-	keys.append([ 0.191709, 0.174472])
-
-	names.append("HipPitch")
-	times.append([0.3])
-	keys.append([-0.0857175])
-
-	names.append("HipRoll")
-	times.append([0.3])
-	keys.append([ -0.128879])
-
-	names.append("KneePitch")
-	times.append([0.3])
-	keys.append([ -0.00222816])
-
-	names.append("LElbowRoll")
-	times.append([ 0.3, 1.12, 1.68])
-	keys.append([ -0.699764, -2.45762, -1.11033])
-
-	names.append("LElbowYaw")
-	times.append([0.3, 1.12, 1.68])
-	keys.append([-0.89139, -0.642302, -0.853579])
-
-	names.append("LHand")
-	times.append([ 0.3])
-	keys.append([ 0.1468])
-
-	names.append("LShoulderPitch")
-	times.append([ 0.3, 1.12, 1.68])
-	keys.append([1.27883, 0.301266, 1.52426])
-
-	names.append("LShoulderRoll")
-	times.append([ 0.3, 1.12, 1.48])
-	keys.append([0.415449, 0.0878344, 0.348476])
-
-	names.append("LWristYaw")
-	times.append([0.3])
-	keys.append([ 0.00149202])
-
-	names.append("RElbowRoll")
-	times.append([ 0.3])
-	keys.append([ 0.922525])
-
-	names.append("RElbowYaw")
-	times.append([0.3])
-	keys.append([ 1.67463])
-
-	names.append("RHand")
-	times.append([0.3])
-	keys.append([ 0.1288])
-
-	names.append("RShoulderPitch")
-	times.append([ 0.3])
-	keys.append([ 1.92368])
-
-	names.append("RShoulderRoll")
-	times.append([0.3])
-	keys.append([ -0.357079])
-
-	names.append("RWristYaw")
-	times.append([0.3])
-	keys.append([ 0.11194])
-
-	
-	
-	def motion():
-		self.motion_service.angleInterpolation(names, keys, times, True)
-	def speech():
-		self.say("Let's learn his language")
-		
-	motion_thread = threading.Thread(target=motion)
-	speech_thread = threading.Thread(target=speech)
-	motion_thread.start()
-	speech_thread.start()
-	motion_thread.join()
-	speech_thread.join()
-	
-	
-	
-	#WideOpenBothHands
-	names = list()
-	times = list()
-	keys = list()
-
-	names.append("HeadPitch")
-	times.append([0.6, 1, 1.4, 1.64])
-	keys.append([-0.0802968, -0.195346, -0.281251, -0.302727])
-
-	names.append("HeadYaw")
-	times.append([0.6, 1, 1.4, 1.64])
-	keys.append([0.022968, 0.05058, 0.030638, 0.05058])
-
-	names.append("HipPitch")
-	times.append([0.52, 0.88, 1.12, 1.6])
-	keys.append([-0.230881, -0.0257017, -0.0257017, -0.255768])
-
-	names.append("HipRoll")
-	times.append([0.52, 0.88, 1.12])
-	keys.append([-0.000340311, -0.000340311, -0.000340311])
-
-	names.append("KneePitch")
-	times.append([0.52, 0.88, 1.12, 1.6])
-	keys.append([0.0723167, -0.00966694, -0.00966694, 0.114746])
-
-	names.append("LElbowRoll")
-	times.append([0.56, 1, 1.4, 1.68])
-	keys.append([-0.651908, -0.361981, -0.389594, -0.363515])
-
-	names.append("LElbowYaw")
-	times.append([0.56, 1, 1.4, 1.68])
-	keys.append([-1.28848, -1.60142, -1.6459, -1.60142])
-
-	names.append("LHand")
-	times.append([0.56, 1, 1.4, 1.68])
-	keys.append([0.3068, 0.82, 0.68, 0.1])
-
-	names.append("LShoulderPitch")
-	times.append([0.56, 1, 1.4, 1.68])
-	keys.append([1.42351, 1.4097, 1.3913, 1.4097])
-
-	names.append("LShoulderRoll")
-	times.append([0.56, 1, 1.4, 1.68])
-	keys.append([0.322343, 0.446958, 0.21803, 0.144399])
-
-	names.append("LWristYaw")
-	times.append([0.56, 1, 1.4, 1.68])
-	keys.append([-0.415757, -1.06464, -0.584497, -0.475581])
-
-	names.append("RElbowRoll")
-	times.append([0.64, 0.96, 1.36, 1.68])
-	keys.append([0.604439, 0.57836, 0.538476, 0.509331])
-
-	names.append("RElbowYaw")
-	times.append([0.64, 0.96, 1.36, 1.68])
-	keys.append([1.1394, 1.74226, 1.64715, 1.60573])
-
-	names.append("RHand")
-	times.append([0.64, 0.96, 1.36, 1.68])
-	keys.append([0.3068, 0.82, 0.68, 0.1])
-
-	names.append("RShoulderPitch")
-	times.append([0.64, 0.96, 1.36, 1.68])
-	keys.append([1.41132, 1.38524, 1.43587, 1.47115])
-
-	names.append("RShoulderRoll")
-	times.append([0.64, 0.96, 1.36, 1.68])
-	keys.append([-0.414847, -0.566031, -0.384166, -0.295195])
-
-	names.append("RWristYaw")
-	times.append([0.64, 0.96, 1.36, 1.68])
-	keys.append([0.389594, 0.803775, 0.312894, 0.199378])
-	
-	
-	def motion():
-		self.motion_service.angleInterpolation(names, keys, times, True)
-	def speech():
-		self.say('And make him happy!')
-		
-	motion_thread = threading.Thread(target=motion)
-	speech_thread = threading.Thread(target=speech)
-	motion_thread.start()
-	speech_thread.start()
-	motion_thread.join()
-	speech_thread.join()
-	
-
-	self.normalPosture()
+        names = list()
+        times = list()
+        keys = list()
+
+        names.append("HeadPitch")
+        times.append([0.48, 0.84])
+        keys.append([-0.192183, -0.368462])
+
+        names.append("HeadYaw")
+        times.append([0.84])
+        keys.append([0])
+
+        names.append("HipPitch")
+        times.append([0.56, 1])
+        keys.append([-0.309665, -0.065382])
+
+        names.append("HipRoll")
+        times.append([0.56, 1])
+        keys.append([-0.0079017, -0.0079017])
+
+        names.append("KneePitch")
+        times.append([0.56, 1])
+        keys.append([0.205769, 0.0608205])
+
+        names.append("LElbowRoll")
+        times.append([0.56, 0.92])
+        keys.append([-1.00013, -0.414292])
+
+        names.append("LElbowYaw")
+        times.append([0.56, 0.92])
+        keys.append([-1.56462, -1.78575])
+
+        names.append("LHand")
+        times.append([0.56, 0.92])
+        keys.append([0.3168, 0.72])
+
+        names.append("LShoulderPitch")
+        times.append([0.56, 0.92])
+        keys.append([0.918823, 0.802022])
+
+        names.append("LShoulderRoll")
+        times.append([0.56, 0.92])
+        keys.append([0.382278, 0.492623])
+
+        names.append("LWristYaw")
+        times.append([0.56, 0.92])
+        keys.append([-0.937315, -1.22341])
+
+        names.append("RElbowRoll")
+        times.append([0.48, 0.84])
+        keys.append([1.08918, 0.415538])
+
+        names.append("RElbowYaw")
+        times.append([0.48, 0.84])
+        keys.append([1.64636, 1.74221])
+
+        names.append("RHand")
+        times.append([0.48, 0.84])
+        keys.append([0.024, 0.72])
+
+        names.append("RShoulderPitch")
+        times.append([0.48, 0.84])
+        keys.append([0.570689, 0.487636])
+
+        names.append("RShoulderRoll")
+        times.append([0.48, 0.84])
+        keys.append([-0.237621, -0.367388])
+
+        names.append("RWristYaw")
+        times.append([0.48, 0.84])
+        keys.append([0.793036, 1.2251])
+        
+        
+        #self.motion_service.moveInit()
+        #self.motion_service.angleInterpolation(names, keys, times, isAbsolute)
+        #self.say('This is my friend, Marco')
+        
+        def motion():
+            self.motion_service.angleInterpolation(names, keys, times, True)
+        def speech():
+            self.say("This is my friend, Marco")
+            
+        motion_thread = threading.Thread(target=motion)
+        speech_thread = threading.Thread(target=speech)
+        motion_thread.start()
+        speech_thread.start()
+        motion_thread.join()
+        speech_thread.join()
+
+        #LittleSpreadRightArms
+        names = list()
+        times = list()
+        keys = list()
+
+        names.append("HeadPitch")
+        times.append([1.12, 1.8, 2.16])
+        keys.append([-0.205769, -0.370226, -0.293631])
+
+        names.append("HeadYaw")
+        times.append([0.2, 0.56, 0.84, 1.12, 1.4, 1.72, 2.16])
+        keys.append([-0.0122965, -0.0102073, -0.0985437, 0.0893026, -0.0985437, 0.0893026, -0.0140261])
+
+        names.append("HipPitch")
+        times.append([0.76, 2.16])
+        keys.append([-0.187014, -0.05314])
+
+        names.append("HipRoll")
+        times.append([0.76, 2.16])
+        keys.append([-0.0456695, -0.0456695])
+
+        names.append("KneePitch")
+        times.append([0.76, 2.16])
+        keys.append([0.0811503, -0.00708406])
+
+        names.append("LElbowRoll")
+        times.append([1.12, 1.8, 2.16])
+        keys.append([-0.425288, -0.418776, -0.416156])
+
+        names.append("LElbowYaw")
+        times.append([1.12, 1.8, 2.16])
+        keys.append([-1.43356, -1.19957, -1.19838])
+
+        names.append("LHand")
+        times.append([1.12, 1.8, 2.16])
+        keys.append([0.84, 0.311072, 0.306419])
+
+        names.append("LShoulderPitch")
+        times.append([1.12, 1.8, 2.16])
+        keys.append([1.40624, 1.45575, 1.46352])
+
+        names.append("LShoulderRoll")
+        times.append([1.12, 1.8, 2.16])
+        keys.append([0.358248, 0.242796, 0.206013])
+
+        names.append("LWristYaw")
+        times.append([1.12, 1.8, 2.16])
+        keys.append([-0.656244, 0.076658, 0.0977037])
+
+        names.append("RElbowRoll")
+        times.append([0.92, 1.6, 2.04])
+        keys.append([0.428422, 0.421844, 0.413016])
+
+        names.append("RElbowYaw")
+        times.append([0.92, 1.6, 2.04])
+        keys.append([2.03783, 1.32996, 1.19382])
+
+        names.append("RHand")
+        times.append([0.92, 1.6, 2.04])
+        keys.append([0.85, 0.351494, 0.3])
+
+        names.append("RShoulderPitch")
+        times.append([0.92, 1.6, 2.04])
+        keys.append([1.4546, 1.45882, 1.46675])
+
+        names.append("RShoulderRoll")
+        times.append([0.92, 1.6, 2.04])
+        keys.append([-0.3529, -0.330302, -0.267505])
+
+        names.append("RWristYaw")
+        times.append([0.92, 1.6, 2.04])
+        keys.append([0.783567, 0.216252, 0.108709])
+        
+        
+        def motion():
+            self.motion_service.angleInterpolation(names, keys, times, True)
+        def speech():
+            self.say("Marco is not able to hear sounds and to speak")
+            
+        motion_thread = threading.Thread(target=motion)
+        speech_thread = threading.Thread(target=speech)
+        motion_thread.start()
+        speech_thread.start()
+        motion_thread.join()
+        speech_thread.join()
+        
+        #RightArmUpAndDown
+        names = list()
+        times = list()
+        keys = list()
+
+        names.append("HeadPitch")
+        times.append([0.44, 0.96, 1.48, 2.32, 2.8])
+        keys.append([-0.515251, -0.34076, -0.0929187, -0.257377, -0.329649])
+
+        names.append("HeadYaw")
+        times.append([0.44, 0.96, 1.24, 1.48, 1.8, 2.12, 2.48, 2.8])
+        keys.append([-0.0156179, -0.0135287, -0.12827, 0.0965434, -0.12827, 0.0965434, -0.0173475, -0.0123995])
+
+        names.append("HipPitch")
+        times.append([0.44, 0.96, 2.32])
+        keys.append([-0.158713, -0.0544052, -0.277851])
+
+        names.append("HipRoll")
+        times.append([0.44, 0.96, 2.32])
+        keys.append([-0.0168668, 0.0440326, 0.00417265])
+
+        names.append("KneePitch")
+        times.append([0.44, 0.96, 2.32])
+        keys.append([0.0375921, -0.0223025, 0.0887257])
+
+        names.append("LElbowRoll")
+        times.append([0.44, 0.96, 1.88, 2.8])
+        keys.append([-0.425005, -0.68766, -0.425288, -0.416156])
+
+        names.append("LElbowYaw")
+        times.append([0.44, 0.96, 1.8, 2.8])
+        keys.append([-1.39032, -1.9088, -1.96299, -1.45377])
+
+        names.append("LHand")
+        times.append([0.44, 0.96, 1.88, 2.8])
+        keys.append([0.305394, 0.62, 0.314203, 0.306419])
+
+        names.append("LShoulderPitch")
+        times.append([0.44, 0.96, 1.88, 2.8])
+        keys.append([1.41011, 1.45418, 1.40624, 1.46352])
+
+        names.append("LShoulderRoll")
+        times.append([0.44, 0.96, 1.88, 2.8])
+        keys.append([0.241407, 0.44927, 0.246933, 0.18874])
+
+        names.append("LWristYaw")
+        times.append([0.44, 0.96, 1.88, 2.8])
+        keys.append([-0.111101, -0.111101, -0.108112, 0.0977037])
+
+        names.append("RElbowRoll")
+        times.append([0.44, 0.72, 1.24, 1.88, 2.8])
+        keys.append([0.431716, 0.429253, 0.998328, 0.428422, 0.413016])
+
+        names.append("RElbowYaw")
+        times.append([0.44, 0.96, 1.48, 1.88, 2.8])
+        keys.append([1.21446, 2.02109, 2.02008, 1.91888, 1.19382])
+
+        names.append("RHand")
+        times.append([0.44, 0.96, 1.24, 1.48, 1.88, 2.8])
+        keys.append([0.315043, 0.98, 0.98, 0.65, 0.53724, 0.3])
+
+        names.append("RShoulderPitch")
+        times.append([0.44, 0.96, 1.48, 1.88, 2.8])
+        keys.append([1.41886, 1.14145, 1.42942, 1.4546, 1.46675])
+
+        names.append("RShoulderRoll")
+        times.append([0.44, 0.96, 1.48, 1.88, 2.8])
+        keys.append([-0.194604, -0.212728, -0.211925, -0.204261, -0.181265])
+
+        names.append("RWristYaw")
+        times.append([0.44, 0.96, 1.48, 1.88, 2.8])
+        keys.append([-0.0875347, 0.912807, 0.90059, 0.783567, 0.108709])
+        
+        def motion():
+            self.motion_service.angleInterpolation(names, keys, times, True)
+        def speech():
+            self.say("He often feels sad because it's very hard for him to make friends")
+            
+        motion_thread = threading.Thread(target=motion)
+        speech_thread = threading.Thread(target=speech)
+        motion_thread.start()
+        speech_thread.start()
+        motion_thread.join()
+        speech_thread.join()
+        
+
+
+        #StrongArmOpen
+        names = list()
+        times = list()
+        keys = list()
+
+        names.append("HeadPitch")
+        times.append([0.52, 1.04, 1.48])
+        keys.append([-0.415657, -0.123426, -0.369636])
+
+        names.append("HeadYaw")
+        times.append([0.52, 1.04, 1.48])
+        keys.append([0.0398422, 0.0398422, 0.0536479])
+
+        names.append("HipPitch")
+        times.append([0.4, 0.72, 0.84, 1.28, 1.48])
+        keys.append([-0.120399, -0.178497, -0.235035, -0.104673, -0.0659148])
+
+        names.append("HipRoll")
+        times.append([0.4, 0.72, 0.84, 1.28, 1.48])
+        keys.append([-0.022229, -0.022229, -0.022229, -0.0122608, -0.0016941])
+
+        names.append("KneePitch")
+        times.append([0.4, 0.72, 0.84, 1.28, 1.48])
+        keys.append([0.0319777, 0.0964101, 0.133068, 0.0460924, 0.0185926])
+
+        names.append("LElbowRoll")
+        times.append([0.36, 0.96, 1.44])
+        keys.append([-1.01055, -1.15715, -1.30027])
+
+        names.append("LElbowYaw")
+        times.append([0.36, 0.96, 1.44])
+        keys.append([-1.15054, -1.71812, -1.77181])
+
+        names.append("LHand")
+        times.append([0.36, 0.96, 1.44])
+        keys.append([0.2132, 0.68, 0.7728])
+
+        names.append("LShoulderPitch")
+        times.append([0.36, 0.96, 1.44])
+        keys.append([1.333, 1.32687, 1.2706])
+
+        names.append("LShoulderRoll")
+        times.append([0.36, 0.96, 1.44])
+        keys.append([0.132418, 0.164632, 0.143156])
+
+        names.append("LWristYaw")
+        times.append([0.36, 0.96, 1.44])
+        keys.append([0.21932, -0.70875, -0.808459])
+
+        names.append("RElbowRoll")
+        times.append([0.44, 1.04, 1.52])
+        keys.append([1.01055, 1.08909, 1.30027])
+
+        names.append("RElbowYaw")
+        times.append([0.44, 1.04, 1.52])
+        keys.append([1.17807, 1.87297, 1.94201])
+
+        names.append("RHand")
+        times.append([0.44, 1.04, 1.52])
+        keys.append([0.0456001, 0.68, 0.7692])
+
+        names.append("RShoulderPitch")
+        times.append([0.44, 1.04, 1.52])
+        keys.append([1.29934, 1.5141, 1.2706])
+
+        names.append("RShoulderRoll")
+        times.append([0.44, 1.04, 1.52])
+        keys.append([-0.176474, -0.115114, -0.116648])
+
+        names.append("RWristYaw")
+        times.append([0.44, 1.04, 1.52])
+        keys.append([0.0889301, 0.935697, 1.1029])
+        
+        def motion():
+            self.motion_service.angleInterpolation(names, keys, times, True)
+        def speech():
+            self.say('I want to help him')
+            
+        motion_thread = threading.Thread(target=motion)
+        speech_thread = threading.Thread(target=speech)
+        motion_thread.start()
+        speech_thread.start()
+        motion_thread.join()
+        speech_thread.join()
+        
+        
+        
+        #FastPointAtUserLeft
+        names = list()
+        times = list()
+        keys = list()
+
+        names.append("HeadPitch")
+        times.append([0.36, 0.56, 0.72, 1, 1.44, 1.84])
+        keys.append([-0.378473, -0.248071, -0.382718, -0.234108, -0.36625, -0.386192])
+
+        names.append("HeadYaw")
+        times.append([0.36, 0.72, 1, 1.44, 1.84])
+        keys.append([-0.0245859, -0.10282, -0.144238, -0.0951499, -0.0951499])
+
+        names.append("HipPitch")
+        times.append([0.48, 1.12, 1.56])
+        keys.append([-0.144636, -0.254162, -0.243543])
+
+        names.append("HipRoll")
+        times.append([0.48, 1.12, 1.56])
+        keys.append([0.00716199, 0.022228, -0.00310838])
+
+        names.append("KneePitch")
+        times.append([0.48, 1.12, 1.56])
+        keys.append([0.0283312, 0.0946297, 0.0803466])
+
+        names.append("LElbowRoll")
+        times.append([0.4, 0.76, 1.04, 1.48, 1.88])
+        keys.append([-1.42811, -0.623083, -0.737812, -1.04154, -1.11211])
+
+        names.append("LElbowYaw")
+        times.append([0.4, 0.76, 1.04, 1.48, 1.88])
+        keys.append([-1.18429, -1.19503, -1.25025, -0.971065, -0.929646])
+
+        names.append("LHand")
+        times.append([0.4, 0.76, 1.04, 1.48, 1.88])
+        keys.append([0.0984, 0.94, 0.39, 0.09, 0.02])
+
+        names.append("LShoulderPitch")
+        times.append([0.4, 0.76, 1.04, 1.48, 1.88])
+        keys.append([1.07222, 0.855211, 0.89428, 1.20261, 1.18881])
+
+        names.append("LShoulderRoll")
+        times.append([0.4, 0.76, 1.04, 1.48, 1.88])
+        keys.append([0.486161, 0.460083, 0.461617, 0.45088, 0.429403])
+
+        names.append("LWristYaw")
+        times.append([0.4, 0.76, 1.04, 1.48, 1.88])
+        keys.append([-0.918909, -0.90817, -0.918909, -0.101286, 0.145688])
+
+        names.append("RElbowRoll")
+        times.append([0.4, 0.76, 1.04, 1.48, 1.88])
+        keys.append([0.874422, 0.898967, 0.926578, 0.733295, 0.70875])
+
+        names.append("RElbowYaw")
+        times.append([0.4, 0.76, 1.04, 1.48, 1.88])
+        keys.append([1.38363, 1.27615, 1.5054, 1.59884, 1.53549])
+
+        names.append("RHand")
+        times.append([0.4, 0.76, 1.04, 1.48, 1.88])
+        keys.append([0.5008, 0.28, 0.14, 0.1532, 0.1532])
+
+        names.append("RShoulderPitch")
+        times.append([0.4, 0.76, 1.04, 1.48, 1.88])
+        keys.append([1.80863, 1.81783, 1.84237, 1.8071, 1.81783])
+
+        names.append("RShoulderRoll")
+        times.append([0.4, 0.76, 1.04, 1.48, 1.88])
+        keys.append([-0.119694, -0.275542, -0.295549, -0.176517, -0.16085])
+
+        names.append("RWristYaw")
+        times.append([0.4, 0.76, 1.04, 1.48, 1.88])
+        keys.append([-0.0767419, -0.0767419, -0.0767419, -0.0767419, -0.0767419])
+        
+        def motion():
+            self.motion_service.angleInterpolation(names, keys, times, True)
+        def speech():
+            self.say('And I bet you do too!')
+            
+        motion_thread = threading.Thread(target=motion)
+        speech_thread = threading.Thread(target=speech)
+        motion_thread.start()
+        speech_thread.start()
+        motion_thread.join()
+        speech_thread.join()
+        
+        
+        
+        #LeftArmOnChest
+        names = list()
+        times = list()
+        keys = list()
+
+        names.append("HeadPitch")
+        times.append([0.3, 1.68])
+        keys.append([-0.299375, -0.307887])
+
+        names.append("HeadYaw")
+        times.append([0.3, 1.68])
+        keys.append([ 0.191709, 0.174472])
+
+        names.append("HipPitch")
+        times.append([0.3])
+        keys.append([-0.0857175])
+
+        names.append("HipRoll")
+        times.append([0.3])
+        keys.append([ -0.128879])
+
+        names.append("KneePitch")
+        times.append([0.3])
+        keys.append([ -0.00222816])
+
+        names.append("LElbowRoll")
+        times.append([ 0.3, 1.12, 1.68])
+        keys.append([ -0.699764, -2.45762, -1.11033])
+
+        names.append("LElbowYaw")
+        times.append([0.3, 1.12, 1.68])
+        keys.append([-0.89139, -0.642302, -0.853579])
+
+        names.append("LHand")
+        times.append([ 0.3])
+        keys.append([ 0.1468])
+
+        names.append("LShoulderPitch")
+        times.append([ 0.3, 1.12, 1.68])
+        keys.append([1.27883, 0.301266, 1.52426])
+
+        names.append("LShoulderRoll")
+        times.append([ 0.3, 1.12, 1.48])
+        keys.append([0.415449, 0.0878344, 0.348476])
+
+        names.append("LWristYaw")
+        times.append([0.3])
+        keys.append([ 0.00149202])
+
+        names.append("RElbowRoll")
+        times.append([ 0.3])
+        keys.append([ 0.922525])
+
+        names.append("RElbowYaw")
+        times.append([0.3])
+        keys.append([ 1.67463])
+
+        names.append("RHand")
+        times.append([0.3])
+        keys.append([ 0.1288])
+
+        names.append("RShoulderPitch")
+        times.append([ 0.3])
+        keys.append([ 1.92368])
+
+        names.append("RShoulderRoll")
+        times.append([0.3])
+        keys.append([ -0.357079])
+
+        names.append("RWristYaw")
+        times.append([0.3])
+        keys.append([ 0.11194])
+
+        
+        
+        def motion():
+            self.motion_service.angleInterpolation(names, keys, times, True)
+        def speech():
+            self.say("Let's learn his language")
+            
+        motion_thread = threading.Thread(target=motion)
+        speech_thread = threading.Thread(target=speech)
+        motion_thread.start()
+        speech_thread.start()
+        motion_thread.join()
+        speech_thread.join()
+        
+        
+        
+        #WideOpenBothHands
+        names = list()
+        times = list()
+        keys = list()
+
+        names.append("HeadPitch")
+        times.append([0.6, 1, 1.4, 1.64])
+        keys.append([-0.0802968, -0.195346, -0.281251, -0.302727])
+
+        names.append("HeadYaw")
+        times.append([0.6, 1, 1.4, 1.64])
+        keys.append([0.022968, 0.05058, 0.030638, 0.05058])
+
+        names.append("HipPitch")
+        times.append([0.52, 0.88, 1.12, 1.6])
+        keys.append([-0.230881, -0.0257017, -0.0257017, -0.255768])
+
+        names.append("HipRoll")
+        times.append([0.52, 0.88, 1.12])
+        keys.append([-0.000340311, -0.000340311, -0.000340311])
+
+        names.append("KneePitch")
+        times.append([0.52, 0.88, 1.12, 1.6])
+        keys.append([0.0723167, -0.00966694, -0.00966694, 0.114746])
+
+        names.append("LElbowRoll")
+        times.append([0.56, 1, 1.4, 1.68])
+        keys.append([-0.651908, -0.361981, -0.389594, -0.363515])
+
+        names.append("LElbowYaw")
+        times.append([0.56, 1, 1.4, 1.68])
+        keys.append([-1.28848, -1.60142, -1.6459, -1.60142])
+
+        names.append("LHand")
+        times.append([0.56, 1, 1.4, 1.68])
+        keys.append([0.3068, 0.82, 0.68, 0.1])
+
+        names.append("LShoulderPitch")
+        times.append([0.56, 1, 1.4, 1.68])
+        keys.append([1.42351, 1.4097, 1.3913, 1.4097])
+
+        names.append("LShoulderRoll")
+        times.append([0.56, 1, 1.4, 1.68])
+        keys.append([0.322343, 0.446958, 0.21803, 0.144399])
+
+        names.append("LWristYaw")
+        times.append([0.56, 1, 1.4, 1.68])
+        keys.append([-0.415757, -1.06464, -0.584497, -0.475581])
+
+        names.append("RElbowRoll")
+        times.append([0.64, 0.96, 1.36, 1.68])
+        keys.append([0.604439, 0.57836, 0.538476, 0.509331])
+
+        names.append("RElbowYaw")
+        times.append([0.64, 0.96, 1.36, 1.68])
+        keys.append([1.1394, 1.74226, 1.64715, 1.60573])
+
+        names.append("RHand")
+        times.append([0.64, 0.96, 1.36, 1.68])
+        keys.append([0.3068, 0.82, 0.68, 0.1])
+
+        names.append("RShoulderPitch")
+        times.append([0.64, 0.96, 1.36, 1.68])
+        keys.append([1.41132, 1.38524, 1.43587, 1.47115])
+
+        names.append("RShoulderRoll")
+        times.append([0.64, 0.96, 1.36, 1.68])
+        keys.append([-0.414847, -0.566031, -0.384166, -0.295195])
+
+        names.append("RWristYaw")
+        times.append([0.64, 0.96, 1.36, 1.68])
+        keys.append([0.389594, 0.803775, 0.312894, 0.199378])
+        
+        def motion():
+            self.motion_service.angleInterpolation(names, keys, times, True)
+        def speech():
+            self.say('And make him happy!')
+            
+        motion_thread = threading.Thread(target=motion)
+        speech_thread = threading.Thread(target=speech)
+        motion_thread.start()
+        speech_thread.start()
+        motion_thread.join()
+        speech_thread.join()
+        
+        self.normalPosture()
 	
     def strong(self):
 
@@ -2051,70 +2049,70 @@ class PepperRobot:
 
     def comehere(self):
 
-	names = list()
-	times = list()
-	keys = list()
+        names = list()
+        times = list()
+        keys = list()
 
-	names.append("HeadPitch")
-	times.append([0.64, 0.72, 0.92, 1])
-	keys.append([-0.0610865, 0.111701, -0.172788, 0.0506145])
+        names.append("HeadPitch")
+        times.append([0.64, 0.72, 0.92, 1])
+        keys.append([-0.0610865, 0.111701, -0.172788, 0.0506145])
 
-	names.append("HipPitch")
-	times.append([0.64, 0.92])
-	keys.append([0.109956, 0.109956])
+        names.append("HipPitch")
+        times.append([0.64, 0.92])
+        keys.append([0.109956, 0.109956])
 
-	names.append("LElbowRoll")
-	times.append([0.64, 0.92])
-	keys.append([-1.56207, -1.56207])
+        names.append("LElbowRoll")
+        times.append([0.64, 0.92])
+        keys.append([-1.56207, -1.56207])
 
-	names.append("LElbowYaw")
-	times.append([0.64, 0.92])
-	keys.append([-1.39801, -1.39801])
+        names.append("LElbowYaw")
+        times.append([0.64, 0.92])
+        keys.append([-1.39801, -1.39801])
 
-	names.append("LHand")
-	times.append([0.64, 0.72, 0.92, 1])
-	keys.append([0.98, 0.38, 0.98, 0.38])
+        names.append("LHand")
+        times.append([0.64, 0.72, 0.92, 1])
+        keys.append([0.98, 0.38, 0.98, 0.38])
 
-	names.append("LShoulderPitch")
-	times.append([0.64, 0.92])
-	keys.append([0.563741, 0.563741])
+        names.append("LShoulderPitch")
+        times.append([0.64, 0.92])
+        keys.append([0.563741, 0.563741])
 
-	names.append("LWristYaw")
-	times.append([0.64, 0.92])
-	keys.append([-1.33169, -1.33169])
+        names.append("LWristYaw")
+        times.append([0.64, 0.92])
+        keys.append([-1.33169, -1.33169])
 
-	names.append("RElbowRoll")
-	times.append([0.64, 0.92])
-	keys.append([1.56207, 1.56207])
+        names.append("RElbowRoll")
+        times.append([0.64, 0.92])
+        keys.append([1.56207, 1.56207])
 
-	names.append("RElbowYaw")
-	times.append([0.64, 0.92])
-	keys.append([0.411898, 0.411898])
+        names.append("RElbowYaw")
+        times.append([0.64, 0.92])
+        keys.append([0.411898, 0.411898])
 
-	names.append("RShoulderPitch")
-	times.append([0.64, 0.92])
-	keys.append([1.57603, 1.57603])
+        names.append("RShoulderPitch")
+        times.append([0.64, 0.92])
+        keys.append([1.57603, 1.57603])
 
-	names.append("RShoulderRoll")
-	times.append([0.64, 0.92])
-	keys.append([-0.516617, -0.516617])
+        names.append("RShoulderRoll")
+        times.append([0.64, 0.92])
+        keys.append([-0.516617, -0.516617])
 
-	
-	def motion():
-		self.motion_service.angleInterpolation(names, keys, times, True)
+        
+        def motion():
+            self.motion_service.angleInterpolation(names, keys, times, True)
         def speech():
-		self.say("Come here!")
+            self.say("Come here!")
 
-        motion_thread = threading.Thread(target=motion)
-        speech_thread = threading.Thread(target=speech)
-        motion_thread.start()
-        time.sleep(0.8)
-        speech_thread.start()
-        motion_thread.join()
-        speech_thread.join()
+            motion_thread = threading.Thread(target=motion)
+            speech_thread = threading.Thread(target=speech)
+            motion_thread.start()
+            time.sleep(0.8)
+            speech_thread.start()
+            motion_thread.join()
+            speech_thread.join()
 
-        time.sleep(0.5)
-        self.normalPosture()
+            time.sleep(0.5)
+            self.normalPosture()
 
 
 

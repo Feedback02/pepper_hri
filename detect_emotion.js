@@ -1,9 +1,14 @@
-// detect_emotion.js
-
-(function() {
-    // Select the video and emotion display elements by ID
+(async function() {
+    // Select the video and display elements by ID
     const video = document.getElementById('video');
     const emotionDisplay = document.getElementById('emotion');
+    const userDisplay = document.getElementById('user_identified');
+
+    // Array to hold labeled face descriptors
+    let labeledFaceDescriptors = [];
+
+    // Initialize face matcher
+    let faceMatcher;
 
     // Function to load face-api.js models
     const loadModels = async () => {
@@ -11,10 +16,42 @@
             console.log('Loading face-api.js models...');
             await faceapi.nets.tinyFaceDetector.loadFromUri('/models');
             await faceapi.nets.faceExpressionNet.loadFromUri('/models');
+            await faceapi.nets.faceRecognitionNet.loadFromUri('/models');
             console.log('Models loaded successfully.');
         } catch (error) {
             console.error('Error loading models:', error);
         }
+    };
+
+    // Function to load labeled images and create descriptors
+    const loadLabeledImages = async () => {
+        const labels = ['Alice', 'Bob']; // Replace with your known names
+
+        return Promise.all(
+            labels.map(async label => {
+                const descriptions = [];
+                for (let i = 1; i <= 5; i++) { // Assuming 5 images per person
+                    try {
+                        const img = await faceapi.fetchImage(`/known_faces/${label}/img${i}.jpg`);
+                        const detections = await faceapi
+                            .detectSingleFace(img, new faceapi.TinyFaceDetectorOptions())
+                            .withFaceLandmarks()
+                            .withFaceDescriptor();
+                        if (!detections) {
+                            console.warn(`No face detected in image: /known_faces/${label}/img${i}.jpg`);
+                            continue;
+                        }
+                        descriptions.push(detections.descriptor);
+                    } catch (error) {
+                        console.error(`Error processing image /known_faces/${label}/img${i}.jpg:`, error);
+                    }
+                }
+                if (descriptions.length === 0) {
+                    console.warn(`No valid faces found for label: ${label}`);
+                }
+                return new faceapi.LabeledFaceDescriptors(label, descriptions);
+            })
+        );
     };
 
     // Function to start the webcam video stream
@@ -29,62 +66,79 @@
         }
     };
 
-    // Function to send emotion data via Fetch API with async/await
-    const sendEmotionData = async (emotion) => {
+    // Function to send recognized user data via Fetch API
+    const sendUserData = async (userName, emotion) => {
         try {
-            const response = await fetch('http://localhost:5000/emotion', {
+            const response = await fetch('http://localhost:5000/user_data', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ emotion }),
+                body: JSON.stringify({ user: userName, emotion: emotion }),
             });
             const data = await response.json();
-            console.log('Emotion data sent:', data);
+            console.log('User data sent:', data);
         } catch (error) {
-            console.error('Error sending emotion data:', error);
+            console.error('Error sending user data:', error);
         }
     };
 
-    // Function to detect emotions
-    const detectEmotion = async () => {
+    // Function to detect emotions and recognize faces
+    const detectAndRecognize = async () => {
         if (video.paused || video.ended) {
             return;
         }
 
         const detections = await faceapi
             .detectAllFaces(video, new faceapi.TinyFaceDetectorOptions())
-            .withFaceExpressions();
+            .withFaceLandmarks()
+            .withFaceExpressions()
+            .withFaceDescriptors();
 
         if (detections.length > 0) {
-            const emotions = detections[0].expressions;
-            const maxEmotion = Object.keys(emotions).reduce((a, b) =>
-                emotions[a] > emotions[b] ? a : b
-            );
-            emotionDisplay.textContent = `Detected Emotion: ${maxEmotion}`;
-            // Send the emotion data to the server
-            sendEmotionData(maxEmotion);
+            detections.forEach(detection => {
+                const { expressions, descriptor } = detection;
+                
+                // Emotion Detection
+                const maxEmotion = Object.keys(expressions).reduce((a, b) =>
+                    expressions[a] > expressions[b] ? a : b
+                );
+                emotionDisplay.textContent = `Detected Emotion: ${maxEmotion}`;
+                
+                // Face Recognition
+                const bestMatch = faceMatcher.findBestMatch(descriptor);
+                if (bestMatch.label !== 'unknown') {
+                    userDisplay.textContent = `User: ${bestMatch.label}`;
+                    // Send data to backend
+                    sendUserData(bestMatch.label, maxEmotion);
+                } else {
+                    userDisplay.textContent = `User: Unknown`;
+                }
+            });
         } else {
             emotionDisplay.textContent = 'Detected Emotion: None';
+            userDisplay.textContent = `User: Unknown`;
         }
     };
 
-    // Start emotion detection at regular intervals
-    const startEmotionDetection = () => {
-        const detectionInterval = 1000; // Interval in milliseconds
+    // Start detection at regular intervals
+    const startDetection = () => {
+        const detectionInterval = 1000; // 1 second
 
         setInterval(async () => {
-            await detectEmotion();
+            await detectAndRecognize();
         }, detectionInterval);
     };
 
-    // Initialize the video stream and load models
+    // Initialize everything
     document.addEventListener('DOMContentLoaded', async () => {
         await loadModels();
+        labeledFaceDescriptors = await loadLabeledImages();
+        faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors, 0.6); // 0.6 is the tolerance
         await startVideo();
     });
 
-    // Start emotion detection once the video starts playing
+    // Start detection once the video starts playing
     video.addEventListener('play', () => {
-        console.log('Video started playing. Starting emotion detection...');
-        startEmotionDetection();
+        console.log('Video started playing. Starting emotion and face recognition...');
+        startDetection();
     });
 })();
