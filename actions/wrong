@@ -1,3 +1,6 @@
+IMAGE_default
+<*,*,*,*>: None
+----
 TEXT_story
 <*,*,*,*>: Sorry, that is not correct. Try again.
 ----

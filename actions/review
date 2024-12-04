@@ -1,0 +1,13 @@
+TEXT_story
+<*,*,*,*>: Let’s review that sign together.
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_.jpeg
+----
+TTS
+<*,*,*,*>: Let’s review that sign together.
+----
+GESTURE
+<*,*,*,*>:
+----
+

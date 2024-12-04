@@ -1,6 +1,5 @@
-IMAGE
-<*, *, *, *>:  img/welcome.jpg
-
+IMAGE_default
+<*,*,*,*>: None
 ----
 TEXT
 <*,*,it,*>: Benvenuto

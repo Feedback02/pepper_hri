@@ -1,0 +1,16 @@
+TEXT_story
+<*,*,*,*>: You're looking a bit frustrated,  but remember, it’s all about having fun! Let's keep going and we’ll get it right!
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_gesto_ok.jpeg
+----
+IMAGE_default
+<*,*,*,*>: None
+----
+TTS
+<*,*,*,*>: You're looking a bit frustrated,  but remember, it’s all about having fun! Let's keep going and we’ll get it right!
+----
+GESTURE
+<*,*,*,*>:
+----
+

@@ -1,14 +1,11 @@
-IMAGE_mascot
-<*,*,*,*>: img/Bambino_sordomuto/Bambino_dubbioso2.jpeg
-----
-TEXT
-<*,*,*,*>:  Tutorial
-----
 TEXT_story
 <*,*,*,*>: Do you remember how to play?
 ----
-GESTURE
-<*,*,*,*>: animations/Stand/Gestures/Hey_1
+IMAGE_default
+<*,*,*,*>: None
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_dubbioso2.jpeg
 ----
 TTS
 <*,*,*,*>: Do you remember how to play?

@@ -1,3 +1,6 @@
+IMAGE_default
+<*,*,*,*>: None
+----
 IMAGE_mascot
 <*,*,*,*>: img/Bambino_sordomuto/Bambino_esulta.jpeg
 ----

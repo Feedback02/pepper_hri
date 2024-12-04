@@ -4,6 +4,9 @@ TEXT_story
 IMAGE_mascot
 <*,*,*,*>: img/Bambino_sordomuto/Bambino_esulta.jpeg
 ----
+IMAGE_default
+<*,*,*,*>: None
+----
 TTS
 <*,*,*,*>: Correct! You've chosen the right letter!
 ----

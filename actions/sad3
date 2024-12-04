@@ -1,0 +1,13 @@
+TEXT_story
+<*,*,*,*>: You seem a bit upset, but don’t worry! I’m here to help if you need it!
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_gesto_ok.jpeg
+----
+TTS
+<*,*,*,*>: You seem a bit upset, but don’t worry! I’m here to help if you need it!
+----
+GESTURE
+<*,*,*,*>:
+----
+

@@ -1,0 +1,26 @@
+TEXT_title
+<*,*,*,*>: Quiz Time!
+----
+TEXT_story
+<*,*,*,*>: Please select a level.
+----
+IMAGE_default
+<*,*,*,*>: None
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_contento.jpeg
+----
+BUTTONS
+Easy
+<*,*,*,*>: Easy
+Medium
+<*,*,*,*>: Medium
+Difficult
+<*,*,*,*>: Difficult
+----
+ASR
+<*,*,*,*>: { 'Easy': ['Easy'], 'Medium': ['Medium'], 'Difficult': ['Difficult'] }
+----
+TTS
+<*,*,*,*>: Please select a level.
+----

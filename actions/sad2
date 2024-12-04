@@ -1,0 +1,13 @@
+TEXT_story
+<*,*,*,*>: I see you're a bit upset, but every mistake is just a step closer to winning! Let's give it another go!
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_gesto_ok.jpeg
+----
+TTS
+<*,*,*,*>: I see you're a bit upset, but every mistake is just a step closer to winning! Let's give it another go!
+----
+GESTURE
+<*,*,*,*>:
+----
+

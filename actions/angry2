@@ -1,0 +1,16 @@
+TEXT_story
+<*,*,*,*>: I can see you're getting a little mad, but don’t worry! You’re doing awesome, let’s try again!
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_gesto_ok.jpeg
+----
+IMAGE_default
+<*,*,*,*>: None
+----
+TTS
+<*,*,*,*>: I can see you're getting a little mad, but don’t worry! You’re doing awesome, let’s try again!
+----
+GESTURE
+<*,*,*,*>:
+----
+
