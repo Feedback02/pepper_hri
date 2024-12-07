@@ -45,56 +45,19 @@ def demo(stop_event):
             print("Error fetching emotion data:" + str(e))
         return None
 
-    
-    
-    #da fare quando entra nell'engagement zone
-    #pepper_cmd.robot.say("hello")
     while True:
         im.init()
    
         shared_dict = {"restart_interaction":"Yes"}
+        shared_dict = {"is_clear":"No"}
+        shared_dict = {"playagain":"No"}
+        shared_dict = {"select_level":"Easy"}
+        shared_dict = {"remember":"No"}
         #restart_answer = 'Yes' #if this is No, restart the interaction
 
         pepper_cmd.robot.hello()
-        
-        
-        #pepper_cmd.robot.think()
-        
-        #pepper_cmd.robot.highfive()
-        #pepper_cmd.robot.strong()
-        
 
-        #se utente non in memoria (riconoscimento facciale) 
-        #pepper_cmd.robot.comehere()
-        #time.sleep(1)
-
-        #def animation():
-        #    pepper_cmd.robot.introduceMarco()
-        #def tablet():
-        #    im.execute('show_marco')
-                
-        #animation_thread = threading.Thread(target=animation)
-        #tablet_thread = threading.Thread(target=tablet)
-        #animation_thread.start()
-        #tablet_thread.start()
-        #animation_thread.join()
-        #tablet_thread.join()
-
-        #pepper_cmd.robot.intro()
-        #pepper_cmd.robot.showTablet()
-        
-
-
-        #pepper_cmd.robot.sad()
-        #pepper_cmd.robot.sad2()
-        #pepper_cmd.robot.pepperVictory()
-        
-
-
-        #im.robot.dance()
-        #im.execute('song1')
-        # user_answer = im.ask('welcome', timeout=200)  # wait for butto
-        bool_old_user = True
+        bool_old_user = False
         bool_play_tutorial = True
         #restart_program = False
 
@@ -119,33 +82,162 @@ def demo(stop_event):
             #emotions = ['neutral', 'happy', 'sad',  'angry', 'fearful', 'disgusted', 'surprised']
             user_emotion = str(get_latest_emotion())
 
-            #chiede "do you remember how to play?"
-            user_answer = im.ask('tutorial_remember',timeout=800)  # wait for buttonuser_answer = im.ask('welcome', timeout=800)  # wait for button
-            if user_answer == 'Yes':
+            #chiede "do you remember how to play?" DA CONTROLLAREEEEEEEEEEEEEEEEEEE
+            def animation():
+                pepper_cmd.robot.think() #forse cambiare?
+            def tablet(shared_dict):
+                shared_dict["remember"] = str(im.ask('tutorial_remember',timeout=800))
+
+            animation_thread = threading.Thread(target=animation)
+            tablet_thread = threading.Thread(target=tablet, args=(shared_dict,))
+            animation_thread.start()
+            tablet_thread.start()
+            animation_thread.join()
+            tablet_thread.join()
+
+            if shared_dict["remember"] == 'Yes':
                 bool_play_tutorial = False
 
         if bool_play_tutorial and not bool_old_user:
-            user_answer = im.ask('tutorial_intro')
+
+            pepper_cmd.robot.comehere()
+            time.sleep(1)
+
+            def animation():
+                pepper_cmd.robot.introduceMarco()
+                time.sleep(1)
+            def tablet():
+                im.execute('show_marco')
+            
+            animation_thread = threading.Thread(target=animation)
+            tablet_thread = threading.Thread(target=tablet)
+            animation_thread.start()
+            tablet_thread.start()
+            animation_thread.join()
+            tablet_thread.join()
+            
+            pepper_cmd.robot.intro()
+
+            def animation():
+                pepper_cmd.robot.very_short_explain()
+            def say_tablet():
+                user_answer = im.ask('tutorial_intro')
+
+            animation_thread = threading.Thread(target=animation)
+            say_tablet_thread = threading.Thread(target=say_tablet)
+            animation_thread.start()
+            say_tablet_thread.start()
+            animation_thread.join()
+            say_tablet_thread.join()
+            
 
         while(bool_play_tutorial):
-            
-            user_answer = im.ask('tutorial_show_1')
-            user_answer = im.ask('tutorial_show_2')  
-            user_answer = im.ask('tutorial_select')  
-            user_answer = im.ask('tutorial_time')
-            user_answer = im.ask('tutoria_points')  # wait for button
-            user_answer = im.ask('tutorial_is_clear',timeout=800)  # wait for buttonuser_answer = im.ask('welcome', timeout=800)  # wait for button
-            if user_answer == 'Yes':
-                bool_play_tutorial = False
+
+            import threading
         
-        level = im.ask('level')
+            def animation():
+                pepper_cmd.robot.explain_1()
+            def say_tablet():
+                user_answer = im.ask('tutorial_show_1')
+
+            animation_thread = threading.Thread(target=animation)
+            say_tablet_thread = threading.Thread(target=say_tablet)
+            animation_thread.start()
+            say_tablet_thread.start()
+            animation_thread.join()
+            say_tablet_thread.join()
+
+            #animazione corta
+            def animation():
+                pepper_cmd.robot.explain_short()
+            def say_tablet():
+                user_answer = im.ask('tutorial_show_2') 
+
+            animation_thread = threading.Thread(target=animation)
+            say_tablet_thread = threading.Thread(target=say_tablet)
+            animation_thread.start()
+            say_tablet_thread.start()
+            animation_thread.join()
+            say_tablet_thread.join()
+
+            def animation():
+                pepper_cmd.robot.explain_2()
+            def say_tablet():
+                user_answer = im.ask('tutorial_select')
+
+            animation_thread = threading.Thread(target=animation)
+            say_tablet_thread = threading.Thread(target=say_tablet)
+            animation_thread.start()
+            say_tablet_thread.start()
+            animation_thread.join()
+            say_tablet_thread.join()
+            
+
+            #animazione lunga
+            def animation():
+                pepper_cmd.robot.explain_1()
+            def say_tablet():
+                user_answer = im.ask('tutorial_time')
+
+            animation_thread = threading.Thread(target=animation)
+            say_tablet_thread = threading.Thread(target=say_tablet)
+            animation_thread.start()
+            say_tablet_thread.start()
+            animation_thread.join()
+            say_tablet_thread.join()
+            
+            
+            #animazione lunga
+            def animation():
+                pepper_cmd.robot.explain_2()
+            def say_tablet():
+                user_answer = im.ask('tutorial_points')  # wait for button
+
+            animation_thread = threading.Thread(target=animation)
+            say_tablet_thread = threading.Thread(target=say_tablet)
+            animation_thread.start()
+            say_tablet_thread.start()
+            animation_thread.join()
+            say_tablet_thread.join()
+  
+
+            #animazione domanda
+            def animation():
+                pepper_cmd.robot.question()
+            def say_tablet(shared_dict):
+                shared_dict["is_clear"] = str(im.ask('tutorial_is_clear',timeout=800)) # wait for buttonuser_answer = im.ask('welcome', timeout=800)  # wait for button 
+        
+            animation_thread = threading.Thread(target=animation)
+            say_tablet_thread = threading.Thread(target=say_tablet, args=(shared_dict,))
+            animation_thread.start()
+            say_tablet_thread.start()
+            animation_thread.join()
+            say_tablet_thread.join()
+
+            if shared_dict["is_clear"] == 'Yes':
+                bool_play_tutorial = False
+
+
+        #seleziona livello
+        def animation():
+            pepper_cmd.robot.very_short_explain_2()
+        def say_tablet(shared_dict):
+            shared_dict["select_level"] = str(im.ask('level',timeout=800)) # wait for buttonuser_answer = im.ask('welcome', timeout=800)  # wait for button 
+    
+        animation_thread = threading.Thread(target=animation)
+        say_tablet_thread = threading.Thread(target=say_tablet, args=(shared_dict,))
+        animation_thread.start()
+        say_tablet_thread.start()
+        animation_thread.join()
+        say_tablet_thread.join()
+
         # inizializzazione variabili per gioco
         #full_alphabet = [l for l in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'] #alfabeto
         points = 0  #punti
-        if level == "Easy":
+        if shared_dict["select_level"] == "Easy":
             time_countdown = 30 
             max_rounds = 5
-        elif level == "Medium":
+        elif shared_dict["select_level"] == "Medium":
             time_countdown = 20 
             max_rounds = 10
         else:
@@ -168,6 +260,7 @@ def demo(stop_event):
             im.execute(letter+'_show')
             shown.append(letter)
 
+        #qua non ho fatto animazione, potrebbe essere un problema thread + append (usare shared dict? ma non vale la pena)
 
         # Display the quiz and wait for the user's answer
         correct_answer = False
@@ -179,13 +272,30 @@ def demo(stop_event):
         rounds = 0
         while(rounds < max_rounds):
             
-            user_answer = im.ask(letter, timeout = 100*time_countdown)  #tempo varia con difficolta'
+            user_answer = im.ask(letter, timeout = 100*time_countdown)  #tempo varia con difficolta' #QUA CHIEDE LA LETTERA MA VALE LA PENA DI METTERE ANIMAZIONE??
             print(n_repetition_letter[letter])
             n_repetition_letter[letter] +=1.0
             
             if user_answer == letter:
                 # Correct answer
-                im.execute('correct')
+                
+                def animation():
+                #animation_strong = pepper_cmd.robot.strong()
+                #animation_highfive = pepper_cmd.robot.highfive()
+
+                    correct_animation = random.choice([pepper_cmd.robot.strong, pepper_cmd.robot.highfive])
+                    correct_animation()
+
+                def say_tablet():
+                    im.execute('correct')
+
+                animation_thread = threading.Thread(target=animation)
+                say_tablet_thread = threading.Thread(target=say_tablet)
+                animation_thread.start()
+                say_tablet_thread.start()
+                animation_thread.join()
+                say_tablet_thread.join()
+
                 #Se corretto aggiorno n_correct_letter e letter_correctness_perc
                 n_correct_letter[letter] +=1.0
                 letter_correctness_perc[letter] = 1- n_correct_letter[letter]/n_repetition_letter[letter]
@@ -215,69 +325,196 @@ def demo(stop_event):
 
             elif user_answer in alphabet:
                 # Wrong answer
-                im.execute('wrong')
+                def animation():
+                    pepper_cmd.robot.wrong()
+
+                def say_tablet():
+                    im.execute('wrong')
+
+                animation_thread = threading.Thread(target=animation)
+                say_tablet_thread = threading.Thread(target=say_tablet)
+                animation_thread.start()
+                say_tablet_thread.start()
+                animation_thread.join()
+                say_tablet_thread.join()
+
+                
                 first_try = False
                 n_tentativi +=1
 
                 #Check if angry
                 user_emotion = str(get_latest_emotion())
                 if user_emotion =='angry':
-                    action = random.choice(['angry1', 'angry2', 'angry3', 'angry4'])
-                    im.execute(action)
-                #Check if angry
+                    
+                    def animation():
+                        pepper_cmd.robot.emotion_angry()
+                    def say_tablet():
+                        action = random.choice(['angry1', 'angry2', 'angry3', 'angry4'])
+                        im.execute(action)
+
+                    animation_thread = threading.Thread(target=animation)
+                    say_tablet_thread = threading.Thread(target=say_tablet)
+                    animation_thread.start()
+                    say_tablet_thread.start()
+                    animation_thread.join()
+                    say_tablet_thread.join()
+
+                #Check if sad
                 elif user_emotion =='sad':
-                    action = random.choice(['sad1', 'sad2', 'sad3', 'sad4'])
-                    im.execute(action)
+
+                    def animation():
+                        pepper_cmd.robot.emotion_sad()
+                    def say_tablet():
+                        action = random.choice(['sad1', 'sad2', 'sad3', 'sad4'])
+                        im.execute(action)
+
+                    animation_thread = threading.Thread(target=animation)
+                    say_tablet_thread = threading.Thread(target=say_tablet)
+                    animation_thread.start()
+                    say_tablet_thread.start()
+                    animation_thread.join()
+                    say_tablet_thread.join()
+
 
                 #altrimenti frase di incoraggiamento generica
                 else:
-                    action = random.choice(['wrong_reaction1', 'wrong_reaction2', 'wrong_reaction3', 'wrong_reaction4'])
-                    im.execute(action)
+
+                    def animation():
+                        pepper_cmd.robot.generic_encouraging()
+                    def say_tablet():
+                        action = random.choice(['wrong_reaction1', 'wrong_reaction2', 'wrong_reaction3', 'wrong_reaction4'])
+                        im.execute(action)
+
+                    animation_thread = threading.Thread(target=animation)
+                    say_tablet_thread = threading.Thread(target=say_tablet)
+                    animation_thread.start()
+                    say_tablet_thread.start()
+                    animation_thread.join()
+                    say_tablet_thread.join()
+
 
                 # con probabilita' prob chiedo se vuole fare pausa
                 prob = 0.3
                 if random.random() < prob:
-                    im.ask('pause')
+                    
+                    def animation():
+                        pepper_cmd.robot.explain_short()
+                    def say_tablet():
+                        im.ask('pause')
+
+                    animation_thread = threading.Thread(target=animation)
+                    say_tablet_thread = threading.Thread(target=say_tablet)
+                    animation_thread.start()
+                    say_tablet_thread.start()
+                    animation_thread.join()
+                    say_tablet_thread.join()
+
                 # dopo 3 tentativi errati mostro di nuovo la lettera
                 if n_tentativi%3 ==0:
-                    im.execute('review')
+                    
+                    def animation():
+                        pepper_cmd.robot.very_short_explain()
+                    def say_tablet():
+                        im.execute('review')
+
+                    animation_thread = threading.Thread(target=animation)
+                    say_tablet_thread = threading.Thread(target=say_tablet)
+                    animation_thread.start()
+                    say_tablet_thread.start()
+                    animation_thread.join()
+                    say_tablet_thread.join()
+                    
                     im.execute(letter+'_show')
                     time_countdown += 1       
             else:
                 # No valid input received
-                im.executeModality('TEXT_story', 'I did not understand. Please try again.')
-                im.executeModality('TTS', 'I did not understand. Please try again.')
+                
+                #QUESTO QUANDO ACCADE? AL TIMEOUT? ###########################################
+                #DA TESTARE
+                def animation():
+                    pepper_cmd.robot.think()
+                def say_tablet():
+                    im.executeModality('TEXT_story', 'I did not understand. Please try again.')
+                    im.executeModality('TTS', 'I did not understand. Please try again.')
+
+                animation_thread = threading.Thread(target=animation)
+                say_tablet_thread = threading.Thread(target=say_tablet)
+                animation_thread.start()
+                say_tablet_thread.start()
+                animation_thread.join()
+                say_tablet_thread.join()
+
+                
 
 
             #user_answer = im.ask(letter)   
-               
+            
+            ########## ma funziona questo timeout????######
             if (user_answer=='timeout'):
-                im.execute('goodbye')
+                
+                def animation():
+                    pepper_cmd.robot.goodbye()
+                def say_tablet():
+                    im.execute('goodbye')
+                
+                animation_thread = threading.Thread(target=animation)
+                say_tablet_thread = threading.Thread(target=say_tablet)
+                animation_thread.start()
+                say_tablet_thread.start()
+                animation_thread.join()
+                say_tablet_thread.join()
+
                 break
 
             if rounds == max_rounds:
                 if points > max_rounds/2:
+
                     im.execute('victory')
                     im.executeModality('TEXT_story', 'Wow! You scored '+str(points)+' out of '+str(max_rounds)+' points!')
                     im.executeModality('TTS', 'Wow! You scored '+str(points)+' out of '+str(max_rounds)+' points!')
+                    
+                    pepper_cmd.robot.headbang()
+                    
+                    
+
                 else:
+        
                     im.execute('lost')
                     im.executeModality('TEXT_story',  'You scored '+str(points)+' out of '+str(max_rounds)+' points. Better luck next time!')
                     im.executeModality('TTS', 'You scored '+str(points)+' out of '+str(max_rounds)+' points. Better luck next time!')
 
-                ans_play_again = 'No'
-                ans_play_again = im.ask('play_again',timeout=800) 
-                if ans_play_again =='Yes':
+                    pepper_cmd.robot.lostgame()
+
+                #animazione domanda
+                def animation():
+                    pepper_cmd.robot.question()
+                def say_tablet(shared_dict):
+                    shared_dict["playagain"] = str(im.ask('play_again',timeout=800)) # wait for buttonuser_answer = im.ask('welcome', timeout=800)  # wait for button 
+            
+                animation_thread = threading.Thread(target=animation)
+                say_tablet_thread = threading.Thread(target=say_tablet, args=(shared_dict,))
+                animation_thread.start()
+                say_tablet_thread.start()
+                animation_thread.join()
+                say_tablet_thread.join()
+
+                if shared_dict["playagain"] == 'Yes':
                     rounds = 0
                     n_tentativi = 0
                     points= 0 
                     first_try = True 
                 else:
-                    im.execute('goodbye')    
-        # After correct answer, execute goodbye action
-
-            # Re-display the quiz question
-            #user_answer = im.ask(letter)
+                    def animation():
+                        pepper_cmd.robot.goodbye()
+                    def say_tablet():
+                        im.execute('goodbye')
+                    
+                    animation_thread = threading.Thread(target=animation)
+                    say_tablet_thread = threading.Thread(target=say_tablet)
+                    animation_thread.start()
+                    say_tablet_thread.start()
+                    animation_thread.join()
+                    say_tablet_thread.join()
             
         im.init()  # Reset the interface
 
@@ -338,39 +575,3 @@ if __name__ == "__main__":
         stop_event.set()
         # Since the thread is daemon, the program will exit even if it doesn't terminate immediately
         print("Program terminated.")
-
-        
-
-
-
-
-# Start qi session locally
-    #try:
-    #    import qi
-    #    from getzone import EngagementZoneMonitor
-
-    #    session = qi.Session()
-    #    session.connect("tcp://" + os.getenv('PEPPER_IP', '127.0.0.1') + ":" + str(9559))
-
-        # Initialize the EngagementZoneMonitor
-    #    zone_monitor = EngagementZoneMonitor(session)
-    #    zone_monitor.start_monitoring()
-    #except Exception as e:
-    #    print("Cannot start qi session or EngagementZoneMonitor")
-    #    sys.exit(1)
-
-    # Wait until someone is detected in Zone 1
-    #print("Waiting for someone to enter Zone 1...")
-    #try:
-    #    while True:
-    #        current_zones = zone_monitor.get_current_zones()
-    #        if current_zones[0] > 0:
-    #            print("Person detected in Zone 1.")
-    #            break
-    #        time.sleep(1)
-    #except KeyboardInterrupt:
-    #    print("Interrupted by user, stopping...")
-    #    zone_monitor.stop_monitoring()
-    #    sys.exit(0)
-
-
