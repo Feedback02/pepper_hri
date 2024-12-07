@@ -1,0 +1,10 @@
+IMAGE_default
+<*,*,*,*>: None
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_saluta.jpeg
+----
+TEXT_story
+<*,*,*,*>: This is my friend Marco!
+----
+
