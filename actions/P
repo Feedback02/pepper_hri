@@ -2,7 +2,7 @@ TEXT_title
 <*,*,*,*>: Quiz Time!
 ----
 TEXT_story
-<*,*,*,*>: Che lettera e' questa?
+<*,*,*,*>: What letter is this? Select the right option
 ----
 IMAGE_default
 <*,*,*,*>: img/asl_alphabet/P.png
