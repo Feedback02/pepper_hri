@@ -1,0 +1,15 @@
+TEXT_title
+<*,*,*,*>: Quiz Time!
+----
+TEXT_story
+<*,*,*,*>: This is letter Q
+----
+IMAGE_default
+<*,*,*,*>: img/asl_alphabet/Q.png
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_contento.jpeg
+----
+TTS
+<*,*,*,*>: This is letter Q
+----
