@@ -6,35 +6,37 @@
     <title>Quiz Page</title>
     <link rel="stylesheet" href="style.css">
     <!-- Include face-api.js and dependencies -->
-    <script defer src="face-api.min.js"></script>
+    <script src="face-api.min.js"></script>
+    <script defer src="detect_emotion.js"></script>
     <script src="qaws.js"></script>
 </head>
 <body>
 
     <!-- Text Wrapper Container -->
     <div id="text_wrapper">
-        <div class="text_default" id="text_default"></div>
+        <div class="text_default" id="text_default">Tutorial</div>
         <div class="text_story" id="text_story"></div>
     </div>
 
     <div class="timer" id="timer">Time Left: 30s</div>
     <div class="status-bar">  
-        <div class="status" id="status"><span style="color: red;">NOT CONNECTED</span></div>
+        <div class="status" id="status"><font color="green">OK</font></div>
     </div>
 
     <div class="image-container">
-        <img id="image_default" src="" alt=" ">
+        <img id="image_default" src="None" alt=" ">
     </div>
 
     <div class="quiz-container">
         <div class="answers-container" id="buttons">
-            <!-- Example Buttons -->
+            <!-- Level Buttons will be dynamically added here -->
+
         </div>
     </div>
 
     <!-- Mascot Container -->
     <div class="mascot-container">
-        <img id="image_mascot" src="" class="mascot-image" alt=" ">
+        <img id="image_mascot" src="img/Bambino_sordomuto/Bambino_contento.jpeg" class="mascot-image" alt=" ">
     </div>
 
     <!-- Video Element to Display Webcam Feed -->
@@ -48,6 +50,8 @@
 
     <!-- Include your scripts -->
     <script src="script.js"></script> 
-    <script src="detect_emotion.js"></script>
+    
+
 </body>
 </html>
+
