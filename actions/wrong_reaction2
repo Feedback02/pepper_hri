@@ -1,0 +1,16 @@
+IMAGE_default
+<*,*,*,*>: None
+----
+TEXT_story
+<*,*,*,*>: It was a tricky one, but I know you can do it!
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_gesto_ok.jpeg
+----
+TTS
+<*,*,*,*>: It was a tricky one, but I know you can do it!
+----
+GESTURE
+<*,*,*,*>:
+----
+

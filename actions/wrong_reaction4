@@ -1,0 +1,16 @@
+IMAGE_default
+<*,*,*,*>: None
+----
+TEXT_story
+<*,*,*,*>: It was hard, but you’re learning and getting better each time!
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_gesto_ok.jpeg
+----
+TTS
+<*,*,*,*>: It was hard, but you’re learning and getting better each time!
+----
+GESTURE
+<*,*,*,*>:
+----
+

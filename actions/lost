@@ -1,0 +1,6 @@
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_piange2.jpeg
+----
+IMAGE_default
+<*,*,*,*>: None
+----

@@ -1,0 +1,16 @@
+TEXT_story
+<*,*,*,*>: Hey! Don't worry, it's all good! You look a bit angry, but every mistake is a step towards success! Take a breath and try again, we'll make it together!
+----
+IMAGE_default
+<*,*,*,*>: None
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_gesto_ok.jpeg
+----
+TTS
+<*,*,*,*>: Hey! Don't worry, it's all good! You look a bit angry, but every mistake is a step towards success! Take a breath and try again, we'll make it together!
+----
+GESTURE
+<*,*,*,*>:
+----
+

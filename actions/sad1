@@ -1,0 +1,13 @@
+TEXT_story
+<*,*,*,*>: I see you're feeling upset, but remember, every try makes you stronger! Let’s do this!
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_gesto_ok.jpeg
+----
+TTS
+<*,*,*,*>: I see you're feeling upset, but remember, every try makes you stronger! Let’s do this!
+----
+GESTURE
+<*,*,*,*>:
+----
+

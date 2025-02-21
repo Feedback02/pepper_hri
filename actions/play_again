@@ -1,0 +1,23 @@
+IMAGE_default
+<*,*,*,*>: None
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_dubbioso2.jpeg
+----
+TEXT_story
+<*,*,*,*>: Do you want to play again?
+----
+TTS
+<*,*,*,*>: Do you want to play again?
+----
+BUTTONS
+Yes
+<*,*,*,*>: Yes
+No
+<*,*,*,*>: No
+----
+ASR
+<*,*,*,*>: { 'Yes': ['Yes'], 'No': ['No'] }
+
+
+

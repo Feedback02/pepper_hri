@@ -1,0 +1,13 @@
+TEXT_story
+<*,*,*,*>: I see you're feeling upset, but don’t worry, we’ll figure it out together!
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_gesto_ok.jpeg
+----
+TTS
+<*,*,*,*>: I see you're feeling upset, but don’t worry, we’ll figure it out together!
+----
+GESTURE
+<*,*,*,*>:
+----
+

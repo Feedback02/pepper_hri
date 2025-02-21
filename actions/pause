@@ -1,0 +1,13 @@
+TEXT_story
+<*,*,*,*>: I know learning new things can be tough, but you’re doing great! Let’s take a short break
+----
+IMAGE_mascot
+<*,*,*,*>: img/Bambino_sordomuto/Bambino_esulta.jpeg
+----
+TTS
+<*,*,*,*>: I know learning new things can be tough, but you’re doing great! Let’s take a short break 
+----
+BUTTONS
+start
+<*,*,*,*>:  Next
+----
