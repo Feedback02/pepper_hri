@@ -35,6 +35,27 @@ def get_emotion():
     else:
         return jsonify({'emotion': None}), 200
 
+@app.route('/user', methods=['POST'])
+def receive_user():
+    """Endpoint to receive user data from the client."""
+    global latest_user
+    data = request.get_json()
+    user = data.get('user')
+    if user:
+        latest_user = user
+        app.logger.info(f"Received user: {user}")
+        return jsonify({'status': 'success'}), 200
+    else:
+        return jsonify({'status': 'error', 'message': 'No user received'}), 400
+
+@app.route('/get_user', methods=['GET'])
+def get_user():
+    """Endpoint to provide the latest user."""
+    return jsonify({'user': latest_user}), 200
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
 
